@@ -6,7 +6,7 @@ import pg from "pg";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 async function main() {
-  const connectionString = process.env.DATABASE_URL;
+  const connectionString = process.env.DATABASE_URL || process.env.POSTGRES_URL;
   if (!connectionString) {
     console.error("DATABASE_URL is not set. Copy .env.example to .env and fill it in.");
     process.exit(1);
