@@ -1,0 +1,30 @@
+{
+  "name": "llama-or-alpaca",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "migrate": "node --env-file=.env scripts/migrate.mjs",
+    "seed:commons": "node --env-file=.env scripts/seed-commons.mjs"
+  },
+  "dependencies": {
+    "next": "^16.2.12",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "pg": "^8.12.0",
+    "bcryptjs": "^2.4.3",
+    "jose": "^5.9.6",
+    "@vercel/blob": "^2.6.1",
+    "nanoid": "^5.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^19.0.0",
+    "@types/pg": "^8.11.6",
+    "@types/bcryptjs": "^2.4.6",
+    "typescript": "^5.5.4"
+  }
+}
