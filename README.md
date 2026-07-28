@@ -22,7 +22,9 @@ Uploads fall back to writing under `public/uploads` locally when `BLOB_READ_WRIT
 
 ## Seeding real photos
 
-`npm run seed:commons` pulls real, freely-licensed llama & alpaca photography from Wikimedia Commons (with photographer attribution stored per image) and inserts them as pre-approved. Needs `DATABASE_URL` set and outbound internet access to `commons.wikimedia.org`.
+Locally: `npm run seed:commons` pulls real, freely-licensed llama & alpaca photography from Wikimedia Commons (with photographer attribution stored per image) and inserts them as pre-approved. Needs `DATABASE_URL` set and outbound internet access to `commons.wikimedia.org`.
+
+In production: `GET /api/admin/seed?token=<SEED_TOKEN>&perSpecies=25` does the same thing from the deployed app itself, so it works even when seeding isn't run from a machine with internet access to Commons. Requires `SEED_TOKEN`, `DATABASE_URL`, and `BLOB_READ_WRITE_TOKEN` to all be set - safe to call more than once, it skips photos it's already seeded.
 
 ## Moderation
 
@@ -32,5 +34,5 @@ Only users listed in the `ADMIN_EMAILS` env var (comma-separated) can access `/a
 
 1. Import this repo into Vercel.
 2. Add a Postgres database and a Blob store from the Vercel Storage tab; this sets `DATABASE_URL` / `POSTGRES_URL` and `BLOB_READ_WRITE_TOKEN` automatically.
-3. Set `SESSION_SECRET` (e.g. `openssl rand -base64 32`) and `ADMIN_EMAILS` as project env vars.
-4. Run `npm run migrate` once against the production `DATABASE_URL`, then `npm run seed:commons` to populate real photos.
+3. Set `SESSION_SECRET` (e.g. `openssl rand -base64 32`), `ADMIN_EMAILS`, and `SEED_TOKEN` (e.g. `openssl rand -hex 24`) as project env vars.
+4. Redeploy so the new env vars take effect, then hit `/api/admin/seed?token=<SEED_TOKEN>` once to populate real photos (the schema migration runs automatically as part of that call).
