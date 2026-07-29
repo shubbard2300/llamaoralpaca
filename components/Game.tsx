@@ -73,6 +73,64 @@ function tone(soundOn: boolean, freq: number, duration: number, type: Oscillator
   }
 }
 
+// A cartoon llama-spit "pfft-pfft-pt!" - a few short filtered noise bursts
+// with a final lower splat, rather than a literal recording (keeps the game
+// dependency-free and avoids sourcing/licensing a real animal sound clip).
+function playSpitSound(soundOn: boolean) {
+  if (!soundOn) return;
+  try {
+    audioCtx = audioCtx || new (window.AudioContext || (window as any).webkitAudioContext)();
+    const ctx = audioCtx;
+    const now = ctx.currentTime;
+
+    const bursts = [
+      { start: 0, dur: 0.05, freq: 520, q: 3, gain: 0.22 },
+      { start: 0.05, dur: 0.045, freq: 430, q: 3, gain: 0.2 },
+      { start: 0.09, dur: 0.04, freq: 480, q: 4, gain: 0.18 },
+      { start: 0.125, dur: 0.17, freq: 210, q: 1.3, gain: 0.3 },
+    ];
+
+    for (const { start, dur, freq, q, gain } of bursts) {
+      const bufferSize = Math.max(1, Math.floor(ctx.sampleRate * dur));
+      const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+      const data = buffer.getChannelData(0);
+      for (let i = 0; i < bufferSize; i++) data[i] = Math.random() * 2 - 1;
+
+      const noise = ctx.createBufferSource();
+      noise.buffer = buffer;
+
+      const filter = ctx.createBiquadFilter();
+      filter.type = "bandpass";
+      filter.frequency.value = freq;
+      filter.Q.value = q;
+
+      const env = ctx.createGain();
+      const t0 = now + start;
+      env.gain.setValueAtTime(0.0001, t0);
+      env.gain.linearRampToValueAtTime(gain, t0 + Math.min(0.01, dur / 4));
+      env.gain.exponentialRampToValueAtTime(0.001, t0 + dur);
+
+      noise.connect(filter);
+      filter.connect(env);
+      env.connect(ctx.destination);
+
+      noise.start(t0);
+      noise.stop(t0 + dur + 0.02);
+    }
+  } catch {
+    /* audio unsupported, ignore */
+  }
+}
+
+// A bright, bouncy major-key arpeggio for a correct guess.
+function playCorrectSound(soundOn: boolean) {
+  if (!soundOn) return;
+  const notes = [523.25, 659.25, 783.99, 1046.5]; // C5, E5, G5, C6
+  notes.forEach((freq, i) => {
+    setTimeout(() => tone(soundOn, freq, 0.18, "triangle", 0.2), i * 65);
+  });
+}
+
 function burstConfetti() {
   const colors = ["#e8823c", "#6aa9a0", "#f4c95d", "#e85c5c", "#7fc2b8"];
   for (let i = 0; i < 26; i++) {
@@ -242,12 +300,10 @@ export default function Game() {
         }
         return next;
       });
-      tone(soundOn, 523.25, 0.12);
-      setTimeout(() => tone(soundOn, 659.25, 0.16), 90);
-      setTimeout(() => tone(soundOn, 783.99, 0.2), 180);
+      playCorrectSound(soundOn);
       setFeedback("good");
     } else {
-      tone(soundOn, 180, 0.3, "sawtooth", 0.12);
+      playSpitSound(soundOn);
       setFeedback("bad");
       setShake(true);
       setTimeout(() => setShake(false), 420);
