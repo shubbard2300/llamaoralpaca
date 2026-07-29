@@ -190,16 +190,6 @@ export default function SiteFooter() {
           <address className="legal-address">
             llamaoralpaca.com
             <br />
-            San Francisco
-            <br />
-            USA
-            <br />
-            171 Fair Oaks #4
-            <br />
-            California
-            <br />
-            94110
-            <br />
             <a href="mailto:contact@llamaoralpaca.com">contact@llamaoralpaca.com</a>
           </address>
         </LegalModal>
@@ -348,8 +338,6 @@ export default function SiteFooter() {
               <a href="mailto:contact@llamaoralpaca.com">contact@llamaoralpaca.com</a>
               <br />
               llamaoralpaca.com
-              <br />
-              171 Fair Oaks #4, San Francisco, CA 94110, USA
             </address>
           </div>
         </LegalModal>
