@@ -166,6 +166,13 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Not authorized." }, { status: 403 });
   }
 
+  if (req.nextUrl.searchParams.get("count") === "1") {
+    const counts = await query(
+      `select species, status, count(*)::int as count from images group by species, status order by species, status`
+    );
+    return NextResponse.json({ ok: true, counts });
+  }
+
   const perSpeciesParam = req.nextUrl.searchParams.get("perSpecies");
   const perSpecies = Math.max(1, Math.min(50, Number(perSpeciesParam) || 25));
 
