@@ -10,6 +10,22 @@ export default function SiteFooter() {
 
   return (
     <footer className="site-footer">
+      <a
+        className="footer-merch-cta"
+        href="https://llama-or-alpaca.myspreadshop.com/"
+        target="_blank"
+        rel="noreferrer"
+        data-tooltip="Tees, mugs & more for llama and alpaca fans"
+      >
+        <span className="footer-merch-icon" aria-hidden="true">
+          🛍️
+        </span>
+        Shop Llama Or Alpaca Merchandise
+        <span className="footer-merch-arrow" aria-hidden="true">
+          →
+        </span>
+      </a>
+
       <div className="footer-links">
         <button className="footer-link" onClick={() => setOpen("privacy")}>
           Privacy Policy
