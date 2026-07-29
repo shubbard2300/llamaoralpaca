@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Llama or Alpaca?",
   description:
     "A fast, fun guessing game with real photos — is it a llama or an alpaca? Build your streak, learn the tells, and beat your best score.",
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: "/llamaVectorHead-NoText.png" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

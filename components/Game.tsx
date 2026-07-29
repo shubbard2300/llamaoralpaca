@@ -337,54 +337,7 @@ export default function Game() {
             <span className="hero-sparkle hero-sparkle-2">🌿</span>
             <span className="hero-sparkle hero-sparkle-3">☁️</span>
             <span className="hero-sparkle hero-sparkle-4">🐾</span>
-            <svg className="hero-mascot" viewBox="0 0 200 200">
-              <defs>
-                <clipPath id="heroBadgeClip">
-                  <circle cx="100" cy="100" r="97" />
-                </clipPath>
-              </defs>
-              <g clipPath="url(#heroBadgeClip)">
-                <rect x="0" y="0" width="100" height="200" fill="#6e5330" />
-                <rect x="100" y="0" width="100" height="200" fill="#9c7a42" />
-              </g>
-              <circle cx="100" cy="100" r="97" fill="none" stroke="#171512" strokeWidth="3" />
-
-              <g className="hero-ear hero-ear-left">
-                <ellipse cx="82" cy="58" rx="15" ry="30" transform="rotate(-10 82 58)" fill="#f4f3f0" stroke="#171512" strokeWidth="2.5" />
-                <ellipse cx="83" cy="60" rx="7.5" ry="20" transform="rotate(-10 83 60)" fill="#8482ab" />
-              </g>
-              <g className="hero-ear hero-ear-right">
-                <ellipse cx="118" cy="58" rx="15" ry="30" transform="rotate(10 118 58)" fill="#f4f3f0" stroke="#171512" strokeWidth="2.5" />
-                <ellipse cx="117" cy="60" rx="7.5" ry="20" transform="rotate(10 117 60)" fill="#33324c" />
-              </g>
-
-              <path
-                d="M100 84 C130 84 148 108 147 136 C146 160 132 182 108 188 C102 190 98 190 92 188 C68 182 54 160 53 136 C52 108 70 84 100 84 Z"
-                fill="#f4f3f0"
-                stroke="#171512"
-                strokeWidth="2.5"
-                strokeLinejoin="round"
-              />
-
-              <ellipse cx="79" cy="128" rx="15" ry="10" fill="#c7c5c0" opacity="0.7" />
-              <ellipse cx="121" cy="128" rx="15" ry="10" fill="#c7c5c0" opacity="0.7" />
-
-              <g className="hero-eyes" fill="#171512">
-                <ellipse cx="79" cy="130" rx="9" ry="7" transform="rotate(-14 79 130)" />
-                <path d="M70 123 l-6 -3 M69 127 l-7 0.5" stroke="#171512" strokeWidth="2.2" strokeLinecap="round" />
-                <ellipse cx="121" cy="130" rx="9" ry="7" transform="rotate(14 121 130)" />
-                <path d="M130 123 l6 -3 M131 127 l7 0.5" stroke="#171512" strokeWidth="2.2" strokeLinecap="round" />
-              </g>
-
-              <g stroke="#171512" strokeWidth="2.2">
-                <ellipse cx="100" cy="157" rx="15" ry="12" fill="#3a3a58" />
-                <circle cx="92" cy="148" r="8" fill="#3a3a58" />
-                <circle cx="108" cy="148" r="8" fill="#3a3a58" />
-              </g>
-              <ellipse cx="100" cy="161" rx="10" ry="6" fill="#7477a8" />
-
-              <ellipse cx="100" cy="178" rx="13" ry="7" fill="#c7c5c0" opacity="0.5" />
-            </svg>
+            <img className="hero-mascot" src="/llamaVectorHead-NoText.png" alt="Llama or Alpaca logo" width={200} height={200} />
           </div>
 
           <h1 className="hero-in hero-in-1">
