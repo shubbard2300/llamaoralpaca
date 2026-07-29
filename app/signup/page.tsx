@@ -24,14 +24,16 @@ export default function SignupPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, displayName, password }),
       });
-      const data = await res.json();
+      const data = await res.json().catch(() => null);
       if (!res.ok) {
-        setError(data.error ?? "Something went wrong.");
+        setError(data?.error ?? "Something went wrong. Please try again.");
         return;
       }
       await refresh();
       router.push("/upload");
       router.refresh();
+    } catch {
+      setError("Something went wrong. Please try again.");
     } finally {
       setSubmitting(false);
     }

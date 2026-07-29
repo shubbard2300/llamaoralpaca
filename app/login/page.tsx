@@ -23,14 +23,16 @@ export default function LoginPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
-      const data = await res.json();
+      const data = await res.json().catch(() => null);
       if (!res.ok) {
-        setError(data.error ?? "Something went wrong.");
+        setError(data?.error ?? "Something went wrong. Please try again.");
         return;
       }
       await refresh();
       router.push("/");
       router.refresh();
+    } catch {
+      setError("Something went wrong. Please try again.");
     } finally {
       setSubmitting(false);
     }

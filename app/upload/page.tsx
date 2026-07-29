@@ -68,17 +68,19 @@ export default function UploadPage() {
       form.append("file", file);
       form.append("species", species);
       const res = await fetch("/api/images/upload", { method: "POST", body: form });
-      const data = await res.json();
+      const data = await res.json().catch(() => null);
       if (!res.ok) {
-        setError(data.error ?? "Upload failed.");
+        setError(data?.error ?? "Upload failed. Please try again.");
         return;
       }
-      setMessage(data.message);
+      setMessage(data?.message ?? "Uploaded!");
       setFile(null);
       setPreview(null);
       setSpecies(null);
       if (fileInputRef.current) fileInputRef.current.value = "";
       loadMine();
+    } catch {
+      setError("Upload failed. Please try again.");
     } finally {
       setSubmitting(false);
     }
