@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useSound } from "./SoundProvider";
 
 type GameImage = {
   id: string;
@@ -31,7 +32,6 @@ const FACTS: Record<"llama" | "alpaca", string[]> = {
 };
 
 const STORAGE_KEY = "loa_scores_v2";
-const SOUND_KEY = "loa_sound_v1";
 const SEEN_HOWTO_KEY = "loa_seen_howto_v1";
 
 function pick<T>(arr: T[]): T {
@@ -152,10 +152,10 @@ async function fetchBatch(): Promise<{ images: GameImage[]; available: number }>
 }
 
 export default function Game() {
+  const { soundOn } = useSound();
   const [screen, setScreen] = useState<"mode" | "game" | "results">("mode");
   const [mode, setMode] = useState<Mode>("classic");
   const [scores, setScores] = useState({ classic: 0, blitz: 0 });
-  const [soundOn, setSoundOn] = useState(true);
   const [showHowTo, setShowHowTo] = useState(false);
 
   const [score, setScore] = useState(0);
@@ -178,7 +178,6 @@ export default function Game() {
 
   useEffect(() => {
     setScores(loadScores());
-    setSoundOn(localStorage.getItem(SOUND_KEY) !== "off");
     if (!localStorage.getItem(SEEN_HOWTO_KEY)) {
       setShowHowTo(true);
       localStorage.setItem(SEEN_HOWTO_KEY, "1");
@@ -188,15 +187,6 @@ export default function Game() {
   function saveScores(next: { classic: number; blitz: number }) {
     setScores(next);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-  }
-
-  function toggleSound() {
-    setSoundOn((s) => {
-      const next = !s;
-      localStorage.setItem(SOUND_KEY, next ? "on" : "off");
-      if (next) tone(true, 660, 0.08);
-      return next;
-    });
   }
 
   async function ensureBatch(): Promise<boolean> {
@@ -339,42 +329,29 @@ export default function Game() {
 
   return (
     <>
-      <button
-        id="soundToggle"
-        className="icon-btn"
-        style={{ position: "fixed", top: 16, right: 66, zIndex: 10 }}
-        aria-pressed={soundOn}
-        aria-label="Toggle sound"
-        onClick={toggleSound}
-      >
-        <svg className="icon-on" viewBox="0 0 24 24">
-          <path d="M4 9v6h4l5 5V4L8 9H4z" />
-          <path d="M16.5 12a3.5 3.5 0 0 0-2-3.17v6.34A3.5 3.5 0 0 0 16.5 12z" />
-          <path d="M14.5 5.14v2.06c2.3.8 4 3 4 5.6s-1.7 4.8-4 5.6v2.06c3.44-.9 6-4 6-7.66s-2.56-6.76-6-7.66z" />
-        </svg>
-        <svg className="icon-off" viewBox="0 0 24 24">
-          <path d="M16.5 12a3.5 3.5 0 0 0-1.4-2.8L16.5 12zM4 9v6h4l5 5V4L8 9H4z" />
-          <path d="M19.8 4.2 4.2 19.8l1 1L20.8 5.2z" />
-        </svg>
-      </button>
-      <button
-        className="icon-btn"
-        style={{ position: "fixed", top: 16, right: 16, zIndex: 10 }}
-        aria-label="How to play"
-        onClick={() => setShowHowTo(true)}
-      >
-        <svg viewBox="0 0 24 24">
-          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm.9 15.5h-1.8v-1.8h1.8v1.8zm1.86-7.02c-.45.53-.86.94-1.1 1.4-.2.37-.28.66-.28 1.27h-1.76c0-.85.12-1.36.4-1.85.28-.5.75-.98 1.2-1.44.4-.4.7-.78.7-1.36 0-.78-.62-1.3-1.5-1.3-.85 0-1.44.47-1.63 1.28l-1.72-.28C9.03 6.98 10.24 6 12.02 6c1.98 0 3.32 1.17 3.32 2.87 0 .87-.34 1.5-.58 1.61z" />
-        </svg>
-      </button>
-
       {screen === "mode" && (
         <section className="panel mode-select">
-          <h1>
+          <div className="hero-mascot-wrap" aria-hidden="true">
+            <span className="hero-sparkle hero-sparkle-1">✨</span>
+            <span className="hero-sparkle hero-sparkle-2">🌿</span>
+            <span className="hero-sparkle hero-sparkle-3">☁️</span>
+            <svg className="hero-mascot" viewBox="0 0 64 64">
+              <circle cx="32" cy="32" r="32" fill="#f4a259" />
+              <ellipse cx="32" cy="30" rx="15" ry="17" fill="#f6e8cf" />
+              <path d="M14 24 C10 14, 14 4, 22 10 C24 16, 22 22, 18 26 Z" fill="#f6e8cf" />
+              <path d="M50 24 C54 14, 50 4, 42 10 C40 16, 42 22, 46 26 Z" fill="#f6e8cf" />
+              <circle cx="26" cy="29" r="2.6" fill="#2b2118" />
+              <circle cx="38" cy="29" r="2.6" fill="#2b2118" />
+              <ellipse cx="32" cy="37" rx="5" ry="3.4" fill="#e9d3a8" />
+            </svg>
+          </div>
+
+          <h1 className="hero-in hero-in-1">
             Llama <span className="or">or</span> Alpaca?
           </h1>
-          <p className="tagline">Real photos. Can you tell them apart?</p>
-          <div className="mode-cards">
+          <p className="tagline hero-in hero-in-2">Real photos. Can you tell them apart?</p>
+
+          <div className="mode-cards hero-in hero-in-3">
             <button className="mode-card" onClick={() => startGame("classic")}>
               <span className="mode-icon">🔥</span>
               <span className="mode-title">Streak</span>
@@ -388,7 +365,17 @@ export default function Game() {
               <span className="mode-best">Best: {scores.blitz}</span>
             </button>
           </div>
-          <p className="mode-note">Got a great llama or alpaca photo? Sign up and upload it to the game.</p>
+
+          <button className="howto-cta hero-in hero-in-4" onClick={() => setShowHowTo(true)}>
+            <span className="howto-cta-icon">🦙🔍🐑</span>
+            <span className="howto-cta-text">
+              <strong>Can you tell them apart?</strong>
+              <span>Ears, face shape, build &amp; coat — a quick visual guide</span>
+            </span>
+            <span className="howto-cta-arrow">→</span>
+          </button>
+
+          <p className="mode-note hero-in hero-in-5">Got a great llama or alpaca photo? Sign up and upload it to the game.</p>
         </section>
       )}
 

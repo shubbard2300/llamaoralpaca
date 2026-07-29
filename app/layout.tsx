@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { SessionProvider } from "@/components/SessionProvider";
+import { SoundProvider } from "@/components/SoundProvider";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
@@ -24,18 +25,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <SessionProvider>
-          <div className="bg-scene" aria-hidden="true">
-            <div className="cloud c1" />
-            <div className="cloud c2" />
-            <div className="cloud c3" />
-            <div className="hill hill-back" />
-            <div className="hill hill-front" />
-          </div>
-          <div className="app">
-            <Navbar />
-            <main className="stage">{children}</main>
-            <SiteFooter />
-          </div>
+          <SoundProvider>
+            <div className="bg-scene" aria-hidden="true">
+              <div className="cloud c1" />
+              <div className="cloud c2" />
+              <div className="cloud c3" />
+              <div className="hill hill-back" />
+              <div className="hill hill-front" />
+            </div>
+            <div className="app">
+              <Navbar />
+              <main className="stage">{children}</main>
+              <SiteFooter />
+            </div>
+          </SoundProvider>
         </SessionProvider>
       </body>
     </html>
