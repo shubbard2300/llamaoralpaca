@@ -143,9 +143,21 @@ async function fetchImageInfo(title: string): Promise<ImageInfo | null> {
 }
 
 async function downloadBuffer(url: string): Promise<Buffer> {
-  const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
-  if (!res.ok) throw new Error(`Failed to download ${url}: ${res.status}`);
-  return Buffer.from(await res.arrayBuffer());
+  // Wikimedia's image CDN rate-limits bursty anonymous traffic (429). Retry
+  // with backoff a few times before giving up on this one image.
+  const maxAttempts = 5;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    const res = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
+    if (res.ok) return Buffer.from(await res.arrayBuffer());
+    if (res.status === 429 && attempt < maxAttempts) {
+      const retryAfter = Number(res.headers.get("retry-after"));
+      const wait = Number.isFinite(retryAfter) && retryAfter > 0 ? retryAfter * 1000 : 1500 * attempt;
+      await sleep(wait);
+      continue;
+    }
+    throw new Error(`Failed to download ${url}: ${res.status}`);
+  }
+  throw new Error(`Failed to download ${url}: exhausted retries`);
 }
 
 export async function GET(req: NextRequest) {
@@ -202,7 +214,7 @@ export async function GET(req: NextRequest) {
       } catch (err: any) {
         skipped.push(`${title}: ${err.message}`);
       }
-      await sleep(120);
+      await sleep(500);
     }
 
     results[species] = { found: titles.length, candidates: photoTitles.length, inserted, skipped };
