@@ -231,13 +231,43 @@ a { color: inherit; }
 .btn-primary:disabled { opacity: 0.6; cursor: default; }
 
 /* ---------- footer ---------- */
-.site-footer { position: relative; z-index: 1; text-align: center; font-size: 0.78rem; color: var(--ink-soft); padding: 10px 16px 18px; }
+.site-footer { position: relative; z-index: 1; text-align: center; font-size: 0.78rem; color: var(--ink-soft); padding: 10px 16px 18px; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.footer-links { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.footer-link { background: none; border: none; padding: 2px; font: inherit; color: var(--ink-soft); cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+.footer-link:hover { color: var(--ink); }
+.footer-sep { color: var(--ink-soft); opacity: 0.5; }
+.footer-tagline { opacity: 0.9; }
+.footer-social { display: flex; align-items: center; gap: 10px; margin-top: 2px; }
+.footer-social a { color: var(--ink-soft); display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--chip-bg); transition: color 0.15s ease, transform 0.15s ease; }
+.footer-social a:hover { color: var(--ink); transform: translateY(-2px); }
+.footer-social svg { width: 16px; height: 16px; fill: currentColor; }
 
 /* ---------- modal ---------- */
 .modal-overlay { position: fixed; inset: 0; background: rgba(30, 20, 10, 0.45); display: grid; place-items: center; z-index: 50; padding: 20px; }
 .modal { position: relative; width: min(100%, 440px); max-height: 86vh; overflow-y: auto; background: var(--card-bg); backdrop-filter: blur(16px); border: 2px solid var(--card-border); border-radius: var(--radius-lg); padding: 26px 22px 22px; box-shadow: var(--shadow-soft); }
 .modal h2 { margin: 0 0 14px; font-size: 1.4rem; text-align: center; }
 .modal-close { position: absolute; top: 14px; right: 14px; width: 32px; height: 32px; border-radius: 50%; border: none; background: var(--chip-bg); cursor: pointer; color: var(--ink); }
+
+/* ---------- legal / support modals ---------- */
+.legal-modal { width: min(100%, 620px); text-align: left; }
+.legal-modal h2 { text-align: left; padding-right: 34px; }
+.legal-body { font-size: 0.9rem; line-height: 1.6; color: var(--ink-soft); }
+.legal-body h3 { color: var(--ink); font-size: 1rem; margin: 18px 0 6px; }
+.legal-body h3:first-child { margin-top: 0; }
+.legal-body p { margin: 0 0 10px; }
+.legal-body ul { margin: 0 0 10px; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.legal-body a { color: var(--accent-llama-dark); }
+.legal-body kbd { background: rgba(0,0,0,0.08); padding: 1px 6px; border-radius: 5px; font-family: system-ui, sans-serif; }
+.legal-ordered { margin: 0 0 10px; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; }
+.legal-ordered-nested { margin-top: 6px; gap: 4px; }
+.legal-address { font-style: normal; margin: 8px 0 0; }
+.legal-placeholder { font-style: italic; }
+.faq-item { margin-bottom: 14px; }
+.faq-item summary { cursor: pointer; font-weight: 700; color: var(--ink); padding: 4px 0; }
+.faq-item summary::marker { color: var(--accent-llama-dark); }
+.faq-item p { margin: 6px 0 0 20px; }
+.support-contact { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--card-border); }
+.support-contact h3 { color: var(--ink); font-size: 1rem; margin: 0 0 6px; }
 .howto-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
 @media (max-width: 420px) { .howto-grid { grid-template-columns: 1fr; } }
 .howto-heading { font-weight: 700; margin-bottom: 6px; }

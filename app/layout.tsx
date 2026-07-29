@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { SessionProvider } from "@/components/SessionProvider";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Llama or Alpaca?",
@@ -33,9 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="app">
             <Navbar />
             <main className="stage">{children}</main>
-            <footer className="site-footer">
-              <span>Made for the herd 🦙🐑 · Real photos, credited to their photographers</span>
-            </footer>
+            <SiteFooter />
           </div>
         </SessionProvider>
       </body>
