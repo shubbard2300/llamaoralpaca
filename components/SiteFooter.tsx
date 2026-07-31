@@ -12,7 +12,7 @@ export default function SiteFooter() {
     <footer className="site-footer">
       <a
         className="footer-merch-cta"
-        href="https://llama-or-alpaca.myspreadshop.com/"
+        href="https://llama-or-alpaca.myspreadshop.com/all"
         target="_blank"
         rel="noreferrer"
         data-tooltip="Tees, mugs & more for llama and alpaca fans"
