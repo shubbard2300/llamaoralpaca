@@ -465,6 +465,14 @@ export default function Game() {
               Menu
             </button>
           </div>
+          <a
+            className="results-merch-nudge"
+            href="https://llama-or-alpaca.myspreadshop.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            🛍️ {newBest ? "Celebrate your new best" : "Love the game?"} — shop llama &amp; alpaca merch →
+          </a>
         </section>
       )}
 
