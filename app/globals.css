@@ -294,6 +294,8 @@ a { color: inherit; }
 .stat-label { font-size: 0.78rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.05em; }
 .results-new-best { color: var(--accent-good); font-weight: 700; margin: 4px 0 10px; }
 .results-actions { display: flex; gap: 12px; margin-top: 14px; }
+.results-merch-nudge { display: inline-block; margin-top: 16px; font-size: 0.85rem; color: var(--ink-soft); text-decoration: none; }
+.results-merch-nudge:hover, .results-merch-nudge:focus-visible { color: var(--ink); text-decoration: underline; }
 
 .btn-primary, .btn-secondary {
   padding: 13px 26px; border-radius: var(--radius-sm); border: none; font-size: 1rem; font-weight: 600;
