@@ -6,11 +6,44 @@ import { SessionProvider } from "@/components/SessionProvider";
 import { SoundProvider } from "@/components/SoundProvider";
 import SiteFooter from "@/components/SiteFooter";
 
+const SITE_URL = "https://www.llamaoralpaca.com";
+const TITLE = "Llama or Alpaca?";
+const DESCRIPTION =
+  "A fast, fun guessing game with real photos — is it a llama or an alpaca? Build your streak, learn the tells, and beat your best score.";
+
 export const metadata: Metadata = {
-  title: "Llama or Alpaca?",
-  description:
-    "A fast, fun guessing game with real photos — is it a llama or an alpaca? Build your streak, learn the tells, and beat your best score.",
+  metadataBase: new URL(SITE_URL),
+  title: TITLE,
+  description: DESCRIPTION,
   icons: { icon: "/llamaVectorHead-NoText.png" },
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    siteName: "Llama or Alpaca?",
+    title: TITLE,
+    description: DESCRIPTION,
+    url: SITE_URL,
+    images: [{ url: "/llamaVectorHead-NoText.png", alt: "Llama or Alpaca? logo" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/llamaVectorHead-NoText.png"],
+  },
+};
+
+const JSON_LD = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Llama or Alpaca?",
+  url: SITE_URL,
+  description: DESCRIPTION,
+  applicationCategory: "Game",
+  operatingSystem: "Any",
+  offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  image: `${SITE_URL}/llamaVectorHead-NoText.png`,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -30,6 +63,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           gtag('js', new Date());
           gtag('config', 'G-QT9EGB624S');`}
         </Script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(JSON_LD) }}
+        />
       </head>
       <body>
         <SessionProvider>
