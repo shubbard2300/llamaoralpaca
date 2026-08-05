@@ -4,6 +4,721 @@
   "graph": {},
   "nodes": [
     {
+      "label": ".claude/CLAUDE.md",
+      "file_type": "document",
+      "source_file": ".claude/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_claude",
+      "community": 23,
+      "community_name": ".claude/CLAUDE.md",
+      "norm_label": ".claude/claude.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": ".claude/CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_claude_graphify",
+      "community": 23,
+      "community_name": ".claude/CLAUDE.md",
+      "norm_label": "graphify"
+    },
+    {
+      "label": "SKILL.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "skill.md"
+    },
+    {
+      "label": "/graphify",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_graphify",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "/graphify"
+    },
+    {
+      "label": "Usage",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_usage",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "usage"
+    },
+    {
+      "label": "What graphify is for",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_what_graphify_is_for",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "what graphify is for"
+    },
+    {
+      "label": "What You Must Do When Invoked",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "what you must do when invoked"
+    },
+    {
+      "label": "Step 0 - GitHub repos and multi-path merge (only if a URL or several paths)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_0_github_repos_and_multi_path_merge_only_if_a_url_or_several_paths",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 0 - github repos and multi-path merge (only if a url or several paths)"
+    },
+    {
+      "label": "Step 1 - Ensure graphify is installed",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_1_ensure_graphify_is_installed",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 1 - ensure graphify is installed"
+    },
+    {
+      "label": "Step 2 - Detect files",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_2_detect_files",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 2 - detect files"
+    },
+    {
+      "label": "Step 2.5 - Video and audio (only if video files detected)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_2_5_video_and_audio_only_if_video_files_detected",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 2.5 - video and audio (only if video files detected)"
+    },
+    {
+      "label": "Step 3 - Extract entities and relationships",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_3_extract_entities_and_relationships",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 3 - extract entities and relationships"
+    },
+    {
+      "label": "Part A - Structural extraction for code files",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_part_a_structural_extraction_for_code_files",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "part a - structural extraction for code files"
+    },
+    {
+      "label": "Part B - Semantic extraction (parallel subagents)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L193",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_part_b_semantic_extraction_parallel_subagents",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "part b - semantic extraction (parallel subagents)"
+    },
+    {
+      "label": "Part C - Merge AST + semantic into final extraction",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L356",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_part_c_merge_ast_semantic_into_final_extraction",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "part c - merge ast + semantic into final extraction"
+    },
+    {
+      "label": "Step 4 - Build graph, cluster, analyze, generate outputs",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L390",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 4 - build graph, cluster, analyze, generate outputs"
+    },
+    {
+      "label": "Step 4.5 - Graph health check (read-only integrity gate)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L453",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_4_5_graph_health_check_read_only_integrity_gate",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 4.5 - graph health check (read-only integrity gate)"
+    },
+    {
+      "label": "Step 5 - Label communities",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L479",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_5_label_communities",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 5 - label communities"
+    },
+    {
+      "label": "Step 6 - Generate Obsidian vault (opt-in) + HTML",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L520",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_6_generate_obsidian_vault_opt_in_html",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 6 - generate obsidian vault (opt-in) + html"
+    },
+    {
+      "label": "Steps 6b-8 - Wiki, Neo4j, FalkorDB, SVG, GraphML, MCP, benchmark (only on their flags)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L540",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_steps_6b_8_wiki_neo4j_falkordb_svg_graphml_mcp_benchmark_only_on_their_flags",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "steps 6b-8 - wiki, neo4j, falkordb, svg, graphml, mcp, benchmark (only on their flags)"
+    },
+    {
+      "label": "Step 9 - Save manifest, update cost tracker, clean up, and report",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L546",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "step 9 - save manifest, update cost tracker, clean up, and report"
+    },
+    {
+      "label": "Interpreter guard for subcommands",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L648",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_interpreter_guard_for_subcommands",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "interpreter guard for subcommands"
+    },
+    {
+      "label": "For --update and --cluster-only",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L666",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_for_update_and_cluster_only",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "for --update and --cluster-only"
+    },
+    {
+      "label": "For /graphify query",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L672",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_for_graphify_query",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "for /graphify query"
+    },
+    {
+      "label": "For /graphify add and --watch",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L684",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_for_graphify_add_and_watch",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "for /graphify add and --watch"
+    },
+    {
+      "label": "For the commit hook and native CLAUDE.md integration",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L690",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_for_the_commit_hook_and_native_claude_md_integration",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "for the commit hook and native claude.md integration"
+    },
+    {
+      "label": "Honesty Rules",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L696",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_skill_honesty_rules",
+      "community": 8,
+      "community_name": "What You Must Do When Invoked",
+      "norm_label": "honesty rules"
+    },
+    {
+      "label": "add-watch.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_add_watch",
+      "community": 17,
+      "community_name": "graphify reference: add a URL and watch a folder",
+      "norm_label": "add-watch.md"
+    },
+    {
+      "label": "graphify reference: add a URL and watch a folder",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "community": 17,
+      "community_name": "graphify reference: add a URL and watch a folder",
+      "norm_label": "graphify reference: add a url and watch a folder"
+    },
+    {
+      "label": "For /graphify add",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_add_watch_for_graphify_add",
+      "community": 17,
+      "community_name": "graphify reference: add a URL and watch a folder",
+      "norm_label": "for /graphify add"
+    },
+    {
+      "label": "For --watch",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_add_watch_for_watch",
+      "community": 17,
+      "community_name": "graphify reference: add a URL and watch a folder",
+      "norm_label": "for --watch"
+    },
+    {
+      "label": "exports.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports",
+      "community": 9,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "exports.md"
+    },
+    {
+      "label": "graphify reference: extra exports and benchmark",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "community": 9,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "graphify reference: extra exports and benchmark"
+    },
+    {
+      "label": "Step 6b - Wiki (only if --wiki flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_6b_wiki_only_if_wiki_flag",
+      "community": 9,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 6b - wiki (only if --wiki flag)"
+    },
+    {
+      "label": "Step 7 - Neo4j export (only if --neo4j or --neo4j-push flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag",
+      "community": 9,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 7 - neo4j export (only if --neo4j or --neo4j-push flag)"
+    },
+    {
+      "label": "Step 7a - FalkorDB export (only if --falkordb or --falkordb-push flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_7a_falkordb_export_only_if_falkordb_or_falkordb_push_flag",
+      "community": 9,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 7a - falkordb export (only if --falkordb or --falkordb-push flag)"
+    },
+    {
+      "label": "Step 7b - SVG export (only if --svg flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_7b_svg_export_only_if_svg_flag",
+      "community": 9,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 7b - svg export (only if --svg flag)"
+    },
+    {
+      "label": "Step 7c - GraphML export (only if --graphml flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_7c_graphml_export_only_if_graphml_flag",
+      "community": 9,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 7c - graphml export (only if --graphml flag)"
+    },
+    {
+      "label": "Step 7d - MCP server (only if --mcp flag)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_7d_mcp_server_only_if_mcp_flag",
+      "community": 9,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 7d - mcp server (only if --mcp flag)"
+    },
+    {
+      "label": "Step 8 - Token reduction benchmark (only if total_words > 5000)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_exports_step_8_token_reduction_benchmark_only_if_total_words_5000",
+      "community": 9,
+      "community_name": "graphify reference: extra exports and benchmark",
+      "norm_label": "step 8 - token reduction benchmark (only if total_words > 5000)"
+    },
+    {
+      "label": "extraction-spec.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/extraction-spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_extraction_spec",
+      "community": 24,
+      "community_name": "extraction-spec.md",
+      "norm_label": "extraction-spec.md"
+    },
+    {
+      "label": "graphify reference: extraction subagent prompt",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/extraction-spec.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_extraction_spec_graphify_reference_extraction_subagent_prompt",
+      "community": 24,
+      "community_name": "extraction-spec.md",
+      "norm_label": "graphify reference: extraction subagent prompt"
+    },
+    {
+      "label": "github-and-merge.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/github-and-merge.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_github_and_merge",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
+      "norm_label": "github-and-merge.md"
+    },
+    {
+      "label": "graphify reference: GitHub clone and cross-repo merge",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/github-and-merge.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
+      "norm_label": "graphify reference: github clone and cross-repo merge"
+    },
+    {
+      "label": "Step 0 - Clone GitHub repo(s) (only if a GitHub URL was given)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/github-and-merge.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_github_and_merge_step_0_clone_github_repo_s_only_if_a_github_url_was_given",
+      "community": 21,
+      "community_name": "graphify reference: GitHub clone and cross-repo merge",
+      "norm_label": "step 0 - clone github repo(s) (only if a github url was given)"
+    },
+    {
+      "label": "hooks.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_hooks",
+      "community": 18,
+      "community_name": "graphify reference: commit hook and native CLAUDE.md integration",
+      "norm_label": "hooks.md"
+    },
+    {
+      "label": "graphify reference: commit hook and native CLAUDE.md integration",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "community": 18,
+      "community_name": "graphify reference: commit hook and native CLAUDE.md integration",
+      "norm_label": "graphify reference: commit hook and native claude.md integration"
+    },
+    {
+      "label": "For git commit hook",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_hooks_for_git_commit_hook",
+      "community": 18,
+      "community_name": "graphify reference: commit hook and native CLAUDE.md integration",
+      "norm_label": "for git commit hook"
+    },
+    {
+      "label": "For native CLAUDE.md integration",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_hooks_for_native_claude_md_integration",
+      "community": 18,
+      "community_name": "graphify reference: commit hook and native CLAUDE.md integration",
+      "norm_label": "for native claude.md integration"
+    },
+    {
+      "label": "query.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "query.md"
+    },
+    {
+      "label": "graphify reference: query, path, explain",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "graphify reference: query, path, explain"
+    },
+    {
+      "label": "Step 0 \u2014 Constrained query expansion (REQUIRED before traversal)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query_step_0_constrained_query_expansion_required_before_traversal",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "step 0 \u2014 constrained query expansion (required before traversal)"
+    },
+    {
+      "label": "Step 1 \u2014 Traversal",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query_step_1_traversal",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "step 1 \u2014 traversal"
+    },
+    {
+      "label": "For /graphify path",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L186",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query_for_graphify_path",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "for /graphify path"
+    },
+    {
+      "label": "For /graphify explain",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L254",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_query_for_graphify_explain",
+      "community": 16,
+      "community_name": "graphify reference: query, path, explain",
+      "norm_label": "for /graphify explain"
+    },
+    {
+      "label": "transcribe.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/transcribe.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_transcribe",
+      "community": 22,
+      "community_name": "graphify reference: transcribe video and audio",
+      "norm_label": "transcribe.md"
+    },
+    {
+      "label": "graphify reference: transcribe video and audio",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/transcribe.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_transcribe_graphify_reference_transcribe_video_and_audio",
+      "community": 22,
+      "community_name": "graphify reference: transcribe video and audio",
+      "norm_label": "graphify reference: transcribe video and audio"
+    },
+    {
+      "label": "Step 2.5 - Transcribe video / audio files (only if video files detected)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/transcribe.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_transcribe_step_2_5_transcribe_video_audio_files_only_if_video_files_detected",
+      "community": 22,
+      "community_name": "graphify reference: transcribe video and audio",
+      "norm_label": "step 2.5 - transcribe video / audio files (only if video files detected)"
+    },
+    {
+      "label": "update.md",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_update",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
+      "norm_label": "update.md"
+    },
+    {
+      "label": "graphify reference: incremental update and cluster-only",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
+      "norm_label": "graphify reference: incremental update and cluster-only"
+    },
+    {
+      "label": "For --update (incremental re-extraction)",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_update_for_update_incremental_re_extraction",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
+      "norm_label": "for --update (incremental re-extraction)"
+    },
+    {
+      "label": "For --cluster-only",
+      "file_type": "document",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L202",
+      "_origin": "ast",
+      "id": "claude_skills_graphify_references_update_for_cluster_only",
+      "community": 19,
+      "community_name": "graphify reference: incremental update and cluster-only",
+      "norm_label": "for --cluster-only"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude",
+      "community": 20,
+      "community_name": "graphify",
+      "norm_label": "claude.md"
+    },
+    {
+      "label": "graphify",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_graphify",
+      "community": 20,
+      "community_name": "graphify",
+      "norm_label": "graphify"
+    },
+    {
+      "label": "Local one-time setup (per clone)",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "claude_local_one_time_setup_per_clone",
+      "community": 20,
+      "community_name": "graphify",
+      "norm_label": "local one-time setup (per clone)"
+    },
+    {
       "label": "admin/page.tsx",
       "file_type": "code",
       "source_file": "app/admin/page.tsx",
@@ -11,8 +726,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "admin/page.tsx",
-      "id": "app_admin_page",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_admin_page"
     },
     {
       "label": "PendingImage",
@@ -24,8 +739,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "pendingimage",
-      "id": "app_admin_page_pendingimage",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_admin_page_pendingimage"
     },
     {
       "label": "AdminPage()",
@@ -36,8 +751,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "adminpage()",
-      "id": "app_admin_page_adminpage",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_admin_page_adminpage"
     },
     {
       "label": "[id]/route.ts",
@@ -47,8 +762,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "[id]/route.ts",
-      "id": "app_api_admin_images_id_route",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_admin_images_id_route"
     },
     {
       "label": "PATCH()",
@@ -59,8 +774,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "patch()",
-      "id": "app_api_admin_images_id_route_patch",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_admin_images_id_route_patch"
     },
     {
       "label": "images/route.ts",
@@ -70,8 +785,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "images/route.ts",
-      "id": "app_api_admin_images_route",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_admin_images_route"
     },
     {
       "label": "GET()",
@@ -82,8 +797,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "get()",
-      "id": "app_api_admin_images_route_get",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_admin_images_route_get"
     },
     {
       "label": "seed/route.ts",
@@ -93,8 +808,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "seed/route.ts",
-      "id": "app_api_admin_seed_route",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route"
     },
     {
       "label": "dynamic",
@@ -104,8 +819,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "dynamic",
-      "id": "app_api_admin_seed_route_dynamic",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_dynamic"
     },
     {
       "label": "maxDuration",
@@ -115,8 +830,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "maxduration",
-      "id": "app_api_admin_seed_route_maxduration",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_maxduration"
     },
     {
       "label": "CATEGORIES",
@@ -126,8 +841,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "categories",
-      "id": "app_api_admin_seed_route_categories",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_categories"
     },
     {
       "label": "SKIP_WORDS",
@@ -137,8 +852,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "skip_words",
-      "id": "app_api_admin_seed_route_skip_words",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_skip_words"
     },
     {
       "label": "sleep()",
@@ -149,8 +864,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "sleep()",
-      "id": "app_api_admin_seed_route_sleep",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_sleep"
     },
     {
       "label": "stripHtml()",
@@ -161,8 +876,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "striphtml()",
-      "id": "app_api_admin_seed_route_striphtml",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_striphtml"
     },
     {
       "label": "commonsApi()",
@@ -173,8 +888,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "commonsapi()",
-      "id": "app_api_admin_seed_route_commonsapi",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_commonsapi"
     },
     {
       "label": "listCategoryFiles()",
@@ -185,8 +900,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "listcategoryfiles()",
-      "id": "app_api_admin_seed_route_listcategoryfiles",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_listcategoryfiles"
     },
     {
       "label": "looksLikePhoto()",
@@ -197,8 +912,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "lookslikephoto()",
-      "id": "app_api_admin_seed_route_lookslikephoto",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_lookslikephoto"
     },
     {
       "label": "ImageInfo",
@@ -210,8 +925,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "imageinfo",
-      "id": "app_api_admin_seed_route_imageinfo",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_imageinfo"
     },
     {
       "label": "fetchImageInfo()",
@@ -222,8 +937,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "fetchimageinfo()",
-      "id": "app_api_admin_seed_route_fetchimageinfo",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_fetchimageinfo"
     },
     {
       "label": "downloadBuffer()",
@@ -234,8 +949,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "downloadbuffer()",
-      "id": "app_api_admin_seed_route_downloadbuffer",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_downloadbuffer"
     },
     {
       "label": "GET()",
@@ -246,8 +961,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "get()",
-      "id": "app_api_admin_seed_route_get",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_admin_seed_route_get"
     },
     {
       "label": "login/route.ts",
@@ -257,8 +972,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "login/route.ts",
-      "id": "app_api_auth_login_route",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_auth_login_route"
     },
     {
       "label": "POST()",
@@ -269,8 +984,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "post()",
-      "id": "app_api_auth_login_route_post",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_auth_login_route_post"
     },
     {
       "label": "logout/route.ts",
@@ -280,8 +995,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "logout/route.ts",
-      "id": "app_api_auth_logout_route",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_auth_logout_route"
     },
     {
       "label": "POST()",
@@ -292,8 +1007,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "post()",
-      "id": "app_api_auth_logout_route_post",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_auth_logout_route_post"
     },
     {
       "label": "me/route.ts",
@@ -303,8 +1018,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "me/route.ts",
-      "id": "app_api_auth_me_route",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_auth_me_route"
     },
     {
       "label": "GET()",
@@ -315,8 +1030,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "get()",
-      "id": "app_api_auth_me_route_get",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_auth_me_route_get"
     },
     {
       "label": "signup/route.ts",
@@ -326,8 +1041,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "signup/route.ts",
-      "id": "app_api_auth_signup_route",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_auth_signup_route"
     },
     {
       "label": "POST()",
@@ -338,8 +1053,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "post()",
-      "id": "app_api_auth_signup_route_post",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_auth_signup_route_post"
     },
     {
       "label": "round/route.ts",
@@ -347,10 +1062,10 @@
       "source_file": "app/api/game/round/route.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 1,
       "norm_label": "round/route.ts",
-      "id": "app_api_game_round_route",
-      "community_name": "db.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_game_round_route"
     },
     {
       "label": "shuffle()",
@@ -359,10 +1074,10 @@
       "source_location": "L4",
       "_callable": true,
       "_origin": "ast",
-      "community": 8,
+      "community": 1,
       "norm_label": "shuffle()",
-      "id": "app_api_game_round_route_shuffle",
-      "community_name": "db.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_game_round_route_shuffle"
     },
     {
       "label": "dynamic",
@@ -370,10 +1085,10 @@
       "source_file": "app/api/game/round/route.ts",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 8,
+      "community": 1,
       "norm_label": "dynamic",
-      "id": "app_api_game_round_route_dynamic",
-      "community_name": "db.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_game_round_route_dynamic"
     },
     {
       "label": "GET()",
@@ -382,10 +1097,10 @@
       "source_location": "L15",
       "_callable": true,
       "_origin": "ast",
-      "community": 8,
+      "community": 1,
       "norm_label": "get()",
-      "id": "app_api_game_round_route_get",
-      "community_name": "db.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_game_round_route_get"
     },
     {
       "label": "mine/route.ts",
@@ -393,10 +1108,10 @@
       "source_file": "app/api/images/mine/route.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 1,
       "norm_label": "mine/route.ts",
-      "id": "app_api_images_mine_route",
-      "community_name": "db.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_images_mine_route"
     },
     {
       "label": "GET()",
@@ -405,10 +1120,10 @@
       "source_location": "L5",
       "_callable": true,
       "_origin": "ast",
-      "community": 8,
+      "community": 1,
       "norm_label": "get()",
-      "id": "app_api_images_mine_route_get",
-      "community_name": "db.ts"
+      "community_name": "auth.ts",
+      "id": "app_api_images_mine_route_get"
     },
     {
       "label": "upload/route.ts",
@@ -418,8 +1133,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "upload/route.ts",
-      "id": "app_api_images_upload_route",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_images_upload_route"
     },
     {
       "label": "POST()",
@@ -430,8 +1145,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "post()",
-      "id": "app_api_images_upload_route_post",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "app_api_images_upload_route_post"
     },
     {
       "label": "layout.tsx",
@@ -441,8 +1156,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "layout.tsx",
-      "id": "app_layout",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_layout"
     },
     {
       "label": "metadata",
@@ -452,8 +1167,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "metadata",
-      "id": "app_layout_metadata",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_layout_metadata"
     },
     {
       "label": "JSON_LD",
@@ -463,8 +1178,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "json_ld",
-      "id": "app_layout_json_ld",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_layout_json_ld"
     },
     {
       "label": "RootLayout()",
@@ -475,8 +1190,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "rootlayout()",
-      "id": "app_layout_rootlayout",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_layout_rootlayout"
     },
     {
       "label": "login/page.tsx",
@@ -486,8 +1201,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "login/page.tsx",
-      "id": "app_login_page",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_login_page"
     },
     {
       "label": "LoginPage()",
@@ -498,8 +1213,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "loginpage()",
-      "id": "app_login_page_loginpage",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_login_page_loginpage"
     },
     {
       "label": "app/page.tsx",
@@ -509,8 +1224,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "app/page.tsx",
-      "id": "app_page",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "app_page"
     },
     {
       "label": "HomePage()",
@@ -521,8 +1236,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "homepage()",
-      "id": "app_page_homepage",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "app_page_homepage"
     },
     {
       "label": "robots.ts",
@@ -532,8 +1247,8 @@
       "_origin": "ast",
       "community": 12,
       "norm_label": "robots.ts",
-      "id": "app_robots",
-      "community_name": "robots.ts"
+      "community_name": "robots.ts",
+      "id": "app_robots"
     },
     {
       "label": "robots()",
@@ -544,8 +1259,8 @@
       "_origin": "ast",
       "community": 12,
       "norm_label": "robots()",
-      "id": "app_robots_robots",
-      "community_name": "robots.ts"
+      "community_name": "robots.ts",
+      "id": "app_robots_robots"
     },
     {
       "label": "signup/page.tsx",
@@ -555,8 +1270,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "signup/page.tsx",
-      "id": "app_signup_page",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_signup_page"
     },
     {
       "label": "SignupPage()",
@@ -567,8 +1282,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "signuppage()",
-      "id": "app_signup_page_signuppage",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_signup_page_signuppage"
     },
     {
       "label": "sitemap.ts",
@@ -578,8 +1293,8 @@
       "_origin": "ast",
       "community": 13,
       "norm_label": "sitemap.ts",
-      "id": "app_sitemap",
-      "community_name": "sitemap.ts"
+      "community_name": "sitemap.ts",
+      "id": "app_sitemap"
     },
     {
       "label": "sitemap()",
@@ -590,8 +1305,8 @@
       "_origin": "ast",
       "community": 13,
       "norm_label": "sitemap()",
-      "id": "app_sitemap_sitemap",
-      "community_name": "sitemap.ts"
+      "community_name": "sitemap.ts",
+      "id": "app_sitemap_sitemap"
     },
     {
       "label": "upload/page.tsx",
@@ -601,8 +1316,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "upload/page.tsx",
-      "id": "app_upload_page",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_upload_page"
     },
     {
       "label": "MyImage",
@@ -614,8 +1329,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "myimage",
-      "id": "app_upload_page_myimage",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_upload_page_myimage"
     },
     {
       "label": "UploadPage()",
@@ -626,8 +1341,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "uploadpage()",
-      "id": "app_upload_page_uploadpage",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "app_upload_page_uploadpage"
     },
     {
       "label": "Game.tsx",
@@ -637,8 +1352,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "game.tsx",
-      "id": "components_game",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game"
     },
     {
       "label": "GameImage",
@@ -650,8 +1365,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "gameimage",
-      "id": "components_game_gameimage",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_gameimage"
     },
     {
       "label": "Mode",
@@ -663,8 +1378,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "mode",
-      "id": "components_game_mode",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_mode"
     },
     {
       "label": "FACTS",
@@ -674,8 +1389,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "facts",
-      "id": "components_game_facts",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_facts"
     },
     {
       "label": "pick()",
@@ -686,8 +1401,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "pick()",
-      "id": "components_game_pick",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_pick"
     },
     {
       "label": "rand()",
@@ -698,8 +1413,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "rand()",
-      "id": "components_game_rand",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_rand"
     },
     {
       "label": "randInt()",
@@ -710,8 +1425,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "randint()",
-      "id": "components_game_randint",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_randint"
     },
     {
       "label": "loadScores()",
@@ -722,8 +1437,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "loadscores()",
-      "id": "components_game_loadscores",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_loadscores"
     },
     {
       "label": "tone()",
@@ -734,8 +1449,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "tone()",
-      "id": "components_game_tone",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_tone"
     },
     {
       "label": "playSpitSound()",
@@ -746,8 +1461,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "playspitsound()",
-      "id": "components_game_playspitsound",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_playspitsound"
     },
     {
       "label": "playCorrectSound()",
@@ -758,8 +1473,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "playcorrectsound()",
-      "id": "components_game_playcorrectsound",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_playcorrectsound"
     },
     {
       "label": "burstConfetti()",
@@ -770,8 +1485,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "burstconfetti()",
-      "id": "components_game_burstconfetti",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_burstconfetti"
     },
     {
       "label": "fetchBatch()",
@@ -782,8 +1497,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "fetchbatch()",
-      "id": "components_game_fetchbatch",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_fetchbatch"
     },
     {
       "label": "Game()",
@@ -794,8 +1509,8 @@
       "_origin": "ast",
       "community": 6,
       "norm_label": "game()",
-      "id": "components_game_game",
-      "community_name": "Game.tsx"
+      "community_name": "Game.tsx",
+      "id": "components_game_game"
     },
     {
       "label": "LegalModal.tsx",
@@ -805,8 +1520,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "legalmodal.tsx",
-      "id": "components_legalmodal",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_legalmodal"
     },
     {
       "label": "LegalModal()",
@@ -817,8 +1532,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "legalmodal()",
-      "id": "components_legalmodal_legalmodal",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_legalmodal_legalmodal"
     },
     {
       "label": "Navbar.tsx",
@@ -828,8 +1543,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "navbar.tsx",
-      "id": "components_navbar",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_navbar"
     },
     {
       "label": "Navbar()",
@@ -840,8 +1555,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "navbar()",
-      "id": "components_navbar_navbar",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_navbar_navbar"
     },
     {
       "label": "SessionProvider.tsx",
@@ -851,8 +1566,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "sessionprovider.tsx",
-      "id": "components_sessionprovider",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_sessionprovider"
     },
     {
       "label": "SessionUser",
@@ -864,8 +1579,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "sessionuser",
-      "id": "components_sessionprovider_sessionuser",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_sessionprovider_sessionuser"
     },
     {
       "label": "SessionContextValue",
@@ -877,8 +1592,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "sessioncontextvalue",
-      "id": "components_sessionprovider_sessioncontextvalue",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_sessionprovider_sessioncontextvalue"
     },
     {
       "label": "SessionContext",
@@ -888,8 +1603,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "sessioncontext",
-      "id": "components_sessionprovider_sessioncontext",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_sessionprovider_sessioncontext"
     },
     {
       "label": "SessionProvider()",
@@ -900,8 +1615,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "sessionprovider()",
-      "id": "components_sessionprovider_sessionprovider",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_sessionprovider_sessionprovider"
     },
     {
       "label": "useSession()",
@@ -912,8 +1627,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "usesession()",
-      "id": "components_sessionprovider_usesession",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_sessionprovider_usesession"
     },
     {
       "label": "SiteFooter.tsx",
@@ -923,8 +1638,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "sitefooter.tsx",
-      "id": "components_sitefooter",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_sitefooter"
     },
     {
       "label": "ModalKey",
@@ -936,8 +1651,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "modalkey",
-      "id": "components_sitefooter_modalkey",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_sitefooter_modalkey"
     },
     {
       "label": "SiteFooter()",
@@ -948,8 +1663,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "sitefooter()",
-      "id": "components_sitefooter_sitefooter",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_sitefooter_sitefooter"
     },
     {
       "label": "SoundProvider.tsx",
@@ -959,8 +1674,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "soundprovider.tsx",
-      "id": "components_soundprovider",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_soundprovider"
     },
     {
       "label": "chime()",
@@ -971,8 +1686,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "chime()",
-      "id": "components_soundprovider_chime",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_soundprovider_chime"
     },
     {
       "label": "SoundContextValue",
@@ -984,8 +1699,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "soundcontextvalue",
-      "id": "components_soundprovider_soundcontextvalue",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_soundprovider_soundcontextvalue"
     },
     {
       "label": "SoundContext",
@@ -995,8 +1710,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "soundcontext",
-      "id": "components_soundprovider_soundcontext",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_soundprovider_soundcontext"
     },
     {
       "label": "SoundProvider()",
@@ -1007,8 +1722,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "soundprovider()",
-      "id": "components_soundprovider_soundprovider",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_soundprovider_soundprovider"
     },
     {
       "label": "useSound()",
@@ -1019,8 +1734,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "usesound()",
-      "id": "components_soundprovider_usesound",
-      "community_name": "layout.tsx"
+      "community_name": "layout.tsx",
+      "id": "components_soundprovider_usesound"
     },
     {
       "label": "auth.ts",
@@ -1030,8 +1745,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "auth.ts",
-      "id": "lib_auth",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth"
     },
     {
       "label": "SESSION_COOKIE",
@@ -1041,8 +1756,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "session_cookie",
-      "id": "lib_auth_session_cookie",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth_session_cookie"
     },
     {
       "label": "getSecretKey()",
@@ -1053,8 +1768,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "getsecretkey()",
-      "id": "lib_auth_getsecretkey",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth_getsecretkey"
     },
     {
       "label": "SessionPayload",
@@ -1066,8 +1781,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "sessionpayload",
-      "id": "lib_auth_sessionpayload",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth_sessionpayload"
     },
     {
       "label": "hashPassword()",
@@ -1078,8 +1793,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "hashpassword()",
-      "id": "lib_auth_hashpassword",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth_hashpassword"
     },
     {
       "label": "verifyPassword()",
@@ -1090,8 +1805,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "verifypassword()",
-      "id": "lib_auth_verifypassword",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth_verifypassword"
     },
     {
       "label": "createSessionToken()",
@@ -1102,8 +1817,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "createsessiontoken()",
-      "id": "lib_auth_createsessiontoken",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth_createsessiontoken"
     },
     {
       "label": "verifySessionToken()",
@@ -1114,8 +1829,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "verifysessiontoken()",
-      "id": "lib_auth_verifysessiontoken",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth_verifysessiontoken"
     },
     {
       "label": "sessionCookieOptions()",
@@ -1126,8 +1841,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "sessioncookieoptions()",
-      "id": "lib_auth_sessioncookieoptions",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth_sessioncookieoptions"
     },
     {
       "label": "getSessionUser()",
@@ -1138,8 +1853,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "getsessionuser()",
-      "id": "lib_auth_getsessionuser",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth_getsessionuser"
     },
     {
       "label": "isAdminEmail()",
@@ -1150,8 +1865,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "isadminemail()",
-      "id": "lib_auth_isadminemail",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth_isadminemail"
     },
     {
       "label": "isValidEmail()",
@@ -1162,8 +1877,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "isvalidemail()",
-      "id": "lib_auth_isvalidemail",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_auth_isvalidemail"
     },
     {
       "label": "db.ts",
@@ -1171,10 +1886,10 @@
       "source_file": "lib/db.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 8,
+      "community": 1,
       "norm_label": "db.ts",
-      "id": "lib_db",
-      "community_name": "db.ts"
+      "community_name": "auth.ts",
+      "id": "lib_db"
     },
     {
       "label": "createPool()",
@@ -1183,10 +1898,10 @@
       "source_location": "L8",
       "_callable": true,
       "_origin": "ast",
-      "community": 8,
+      "community": 1,
       "norm_label": "createpool()",
-      "id": "lib_db_createpool",
-      "community_name": "db.ts"
+      "community_name": "auth.ts",
+      "id": "lib_db_createpool"
     },
     {
       "label": "getPool()",
@@ -1195,10 +1910,10 @@
       "source_location": "L22",
       "_callable": true,
       "_origin": "ast",
-      "community": 8,
+      "community": 1,
       "norm_label": "getpool()",
-      "id": "lib_db_getpool",
-      "community_name": "db.ts"
+      "community_name": "auth.ts",
+      "id": "lib_db_getpool"
     },
     {
       "label": "query()",
@@ -1207,10 +1922,10 @@
       "source_location": "L29",
       "_callable": true,
       "_origin": "ast",
-      "community": 8,
+      "community": 1,
       "norm_label": "query()",
-      "id": "lib_db_query",
-      "community_name": "db.ts"
+      "community_name": "auth.ts",
+      "id": "lib_db_query"
     },
     {
       "label": "queryOne()",
@@ -1221,8 +1936,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "queryone()",
-      "id": "lib_db_queryone",
-      "community_name": "auth.ts"
+      "community_name": "auth.ts",
+      "id": "lib_db_queryone"
     },
     {
       "label": "storage.ts",
@@ -1232,8 +1947,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "storage.ts",
-      "id": "lib_storage",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "lib_storage"
     },
     {
       "label": "ALLOWED_TYPES",
@@ -1243,8 +1958,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "allowed_types",
-      "id": "lib_storage_allowed_types",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "lib_storage_allowed_types"
     },
     {
       "label": "MAX_UPLOAD_BYTES",
@@ -1254,8 +1969,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "max_upload_bytes",
-      "id": "lib_storage_max_upload_bytes",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "lib_storage_max_upload_bytes"
     },
     {
       "label": "EXT_BY_TYPE",
@@ -1265,8 +1980,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "ext_by_type",
-      "id": "lib_storage_ext_by_type",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "lib_storage_ext_by_type"
     },
     {
       "label": "storeImage()",
@@ -1277,8 +1992,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "storeimage()",
-      "id": "lib_storage_storeimage",
-      "community_name": "seed/route.ts"
+      "community_name": "seed/route.ts",
+      "id": "lib_storage_storeimage"
     },
     {
       "label": "next-env.d.ts",
@@ -1288,8 +2003,8 @@
       "_origin": "ast",
       "community": 15,
       "norm_label": "next-env.d.ts",
-      "id": "next_env_d",
-      "community_name": "next-env.d.ts"
+      "community_name": "next-env.d.ts",
+      "id": "next_env_d"
     },
     {
       "label": "NOTE: This file should not be edited",
@@ -1299,8 +2014,8 @@
       "_origin": "ast",
       "community": 15,
       "norm_label": "note: this file should not be edited",
-      "id": "next_env_d_rationale_5",
-      "community_name": "next-env.d.ts"
+      "community_name": "next-env.d.ts",
+      "id": "next_env_d_rationale_5"
     },
     {
       "label": "next.config.mjs",
@@ -1310,8 +2025,8 @@
       "_origin": "ast",
       "community": 14,
       "norm_label": "next.config.mjs",
-      "id": "next_config",
-      "community_name": "next.config.mjs"
+      "community_name": "next.config.mjs",
+      "id": "next_config"
     },
     {
       "label": "nextConfig",
@@ -1321,8 +2036,8 @@
       "_origin": "ast",
       "community": 14,
       "norm_label": "nextconfig",
-      "id": "next_config_nextconfig",
-      "community_name": "next.config.mjs"
+      "community_name": "next.config.mjs",
+      "id": "next_config_nextconfig"
     },
     {
       "label": "package.json",
@@ -1332,8 +2047,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "package.json",
-      "id": "package",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package"
     },
     {
       "label": "name",
@@ -1343,8 +2058,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "name",
-      "id": "package_name",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_name"
     },
     {
       "label": "version",
@@ -1354,8 +2069,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "version",
-      "id": "package_version",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_version"
     },
     {
       "label": "private",
@@ -1365,8 +2080,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "private",
-      "id": "package_private",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_private"
     },
     {
       "label": "scripts",
@@ -1376,8 +2091,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "scripts",
-      "id": "package_scripts",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_scripts"
     },
     {
       "label": "dev",
@@ -1387,8 +2102,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "dev",
-      "id": "package_scripts_dev",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_scripts_dev"
     },
     {
       "label": "build",
@@ -1398,8 +2113,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "build",
-      "id": "package_scripts_build",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_scripts_build"
     },
     {
       "label": "start",
@@ -1409,8 +2124,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "start",
-      "id": "package_scripts_start",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_scripts_start"
     },
     {
       "label": "lint",
@@ -1420,8 +2135,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "lint",
-      "id": "package_scripts_lint",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_scripts_lint"
     },
     {
       "label": "migrate",
@@ -1431,8 +2146,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "migrate",
-      "id": "package_scripts_migrate",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_scripts_migrate"
     },
     {
       "label": "seed:commons",
@@ -1442,8 +2157,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "seed:commons",
-      "id": "package_scripts_seed_commons",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_scripts_seed_commons"
     },
     {
       "label": "dependencies",
@@ -1453,8 +2168,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "dependencies",
-      "id": "package_dependencies",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "package_dependencies"
     },
     {
       "label": "next",
@@ -1464,8 +2179,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "next",
-      "id": "package_dependencies_next",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "package_dependencies_next"
     },
     {
       "label": "next",
@@ -1475,8 +2190,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "next",
-      "id": "next",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "next"
     },
     {
       "label": "react",
@@ -1486,8 +2201,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "react",
-      "id": "package_dependencies_react",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "package_dependencies_react"
     },
     {
       "label": "react",
@@ -1497,8 +2212,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "react",
-      "id": "react",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "react"
     },
     {
       "label": "react-dom",
@@ -1508,8 +2223,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "react-dom",
-      "id": "package_dependencies_react_dom",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "package_dependencies_react_dom"
     },
     {
       "label": "react-dom",
@@ -1519,8 +2234,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "react-dom",
-      "id": "react_dom",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "react_dom"
     },
     {
       "label": "pg",
@@ -1530,8 +2245,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "pg",
-      "id": "package_dependencies_pg",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "package_dependencies_pg"
     },
     {
       "label": "pg",
@@ -1541,8 +2256,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "pg",
-      "id": "pg",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "pg"
     },
     {
       "label": "bcryptjs",
@@ -1552,8 +2267,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "bcryptjs",
-      "id": "package_dependencies_bcryptjs",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "package_dependencies_bcryptjs"
     },
     {
       "label": "bcryptjs",
@@ -1563,8 +2278,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "bcryptjs",
-      "id": "bcryptjs",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "bcryptjs"
     },
     {
       "label": "jose",
@@ -1574,8 +2289,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "jose",
-      "id": "package_dependencies_jose",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "package_dependencies_jose"
     },
     {
       "label": "jose",
@@ -1585,8 +2300,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "jose",
-      "id": "jose",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "jose"
     },
     {
       "label": "@vercel/blob",
@@ -1596,8 +2311,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "@vercel/blob",
-      "id": "package_dependencies_vercel_blob",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "package_dependencies_vercel_blob"
     },
     {
       "label": "@vercel/blob",
@@ -1607,8 +2322,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "@vercel/blob",
-      "id": "vercel_blob",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "vercel_blob"
     },
     {
       "label": "nanoid",
@@ -1618,8 +2333,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "nanoid",
-      "id": "package_dependencies_nanoid",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "package_dependencies_nanoid"
     },
     {
       "label": "nanoid",
@@ -1629,8 +2344,8 @@
       "_origin": "ast",
       "community": 5,
       "norm_label": "nanoid",
-      "id": "nanoid",
-      "community_name": "dependencies"
+      "community_name": "dependencies",
+      "id": "nanoid"
     },
     {
       "label": "devDependencies",
@@ -1640,8 +2355,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "devdependencies",
-      "id": "package_devdependencies",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_devdependencies"
     },
     {
       "label": "@types/node",
@@ -1651,8 +2366,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "@types/node",
-      "id": "package_devdependencies_types_node",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_devdependencies_types_node"
     },
     {
       "label": "@types/node",
@@ -1662,8 +2377,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "@types/node",
-      "id": "types_node",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "types_node"
     },
     {
       "label": "@types/react",
@@ -1673,8 +2388,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "@types/react",
-      "id": "package_devdependencies_types_react",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_devdependencies_types_react"
     },
     {
       "label": "@types/react",
@@ -1684,8 +2399,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "@types/react",
-      "id": "types_react",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "types_react"
     },
     {
       "label": "@types/pg",
@@ -1695,8 +2410,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "@types/pg",
-      "id": "package_devdependencies_types_pg",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_devdependencies_types_pg"
     },
     {
       "label": "@types/pg",
@@ -1706,8 +2421,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "@types/pg",
-      "id": "types_pg",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "types_pg"
     },
     {
       "label": "@types/bcryptjs",
@@ -1717,8 +2432,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "@types/bcryptjs",
-      "id": "package_devdependencies_types_bcryptjs",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_devdependencies_types_bcryptjs"
     },
     {
       "label": "@types/bcryptjs",
@@ -1728,8 +2443,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "@types/bcryptjs",
-      "id": "types_bcryptjs",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "types_bcryptjs"
     },
     {
       "label": "typescript",
@@ -1739,8 +2454,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "typescript",
-      "id": "package_devdependencies_typescript",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "package_devdependencies_typescript"
     },
     {
       "label": "typescript",
@@ -1750,8 +2465,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "typescript",
-      "id": "typescript",
-      "community_name": "scripts"
+      "community_name": "scripts",
+      "id": "typescript"
     },
     {
       "label": "migrate.mjs",
@@ -1761,8 +2476,8 @@
       "_origin": "ast",
       "community": 10,
       "norm_label": "migrate.mjs",
-      "id": "scripts_migrate",
-      "community_name": "migrate.mjs"
+      "community_name": "migrate.mjs",
+      "id": "scripts_migrate"
     },
     {
       "label": "__dirname",
@@ -1772,8 +2487,8 @@
       "_origin": "ast",
       "community": 10,
       "norm_label": "__dirname",
-      "id": "scripts_migrate_dirname",
-      "community_name": "migrate.mjs"
+      "community_name": "migrate.mjs",
+      "id": "scripts_migrate_dirname"
     },
     {
       "label": "main()",
@@ -1784,8 +2499,8 @@
       "_origin": "ast",
       "community": 10,
       "norm_label": "main()",
-      "id": "scripts_migrate_main",
-      "community_name": "migrate.mjs"
+      "community_name": "migrate.mjs",
+      "id": "scripts_migrate_main"
     },
     {
       "label": "seed-commons.mjs",
@@ -1795,8 +2510,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "seed-commons.mjs",
-      "id": "scripts_seed_commons",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons"
     },
     {
       "label": "storeImage()",
@@ -1807,8 +2522,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "storeimage()",
-      "id": "scripts_seed_commons_storeimage",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_storeimage"
     },
     {
       "label": "CATEGORIES",
@@ -1818,8 +2533,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "categories",
-      "id": "scripts_seed_commons_categories",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_categories"
     },
     {
       "label": "SKIP_WORDS",
@@ -1829,8 +2544,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "skip_words",
-      "id": "scripts_seed_commons_skip_words",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_skip_words"
     },
     {
       "label": "sleep()",
@@ -1841,8 +2556,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "sleep()",
-      "id": "scripts_seed_commons_sleep",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_sleep"
     },
     {
       "label": "stripHtml()",
@@ -1853,8 +2568,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "striphtml()",
-      "id": "scripts_seed_commons_striphtml",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_striphtml"
     },
     {
       "label": "commonsApi()",
@@ -1865,8 +2580,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "commonsapi()",
-      "id": "scripts_seed_commons_commonsapi",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_commonsapi"
     },
     {
       "label": "listCategoryFiles()",
@@ -1877,8 +2592,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "listcategoryfiles()",
-      "id": "scripts_seed_commons_listcategoryfiles",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_listcategoryfiles"
     },
     {
       "label": "looksLikePhoto()",
@@ -1889,8 +2604,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "lookslikephoto()",
-      "id": "scripts_seed_commons_lookslikephoto",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_lookslikephoto"
     },
     {
       "label": "fetchImageInfo()",
@@ -1901,8 +2616,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "fetchimageinfo()",
-      "id": "scripts_seed_commons_fetchimageinfo",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_fetchimageinfo"
     },
     {
       "label": "downloadBuffer()",
@@ -1913,8 +2628,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "downloadbuffer()",
-      "id": "scripts_seed_commons_downloadbuffer",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_downloadbuffer"
     },
     {
       "label": "main()",
@@ -1925,8 +2640,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "main()",
-      "id": "scripts_seed_commons_main",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_main"
     },
     {
       "label": "NOTE: this script needs outbound internet access to commons.wikimedia.org.",
@@ -1936,8 +2651,8 @@
       "_origin": "ast",
       "community": 7,
       "norm_label": "note: this script needs outbound internet access to commons.wikimedia.org.",
-      "id": "scripts_seed_commons_rationale_5",
-      "community_name": "seed-commons.mjs"
+      "community_name": "seed-commons.mjs",
+      "id": "scripts_seed_commons_rationale_5"
     },
     {
       "label": "tsconfig.json",
@@ -1945,10 +2660,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 9,
+      "community": 4,
       "norm_label": "tsconfig.json",
-      "id": "tsconfig",
-      "community_name": "include"
+      "community_name": "compilerOptions",
+      "id": "tsconfig"
     },
     {
       "label": "compilerOptions",
@@ -1958,8 +2673,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "compileroptions",
-      "id": "tsconfig_compileroptions",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions"
     },
     {
       "label": "target",
@@ -1969,8 +2684,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "target",
-      "id": "tsconfig_compileroptions_target",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_target"
     },
     {
       "label": "lib",
@@ -1980,8 +2695,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "lib",
-      "id": "tsconfig_compileroptions_lib",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_lib"
     },
     {
       "label": "dom",
@@ -1991,8 +2706,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "dom",
-      "id": "ref_dom",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "ref_dom"
     },
     {
       "label": "dom.iterable",
@@ -2002,8 +2717,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "dom.iterable",
-      "id": "ref_dom_iterable",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "ref_dom_iterable"
     },
     {
       "label": "esnext",
@@ -2013,8 +2728,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "esnext",
-      "id": "ref_esnext",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "ref_esnext"
     },
     {
       "label": "allowJs",
@@ -2024,8 +2739,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "allowjs",
-      "id": "tsconfig_compileroptions_allowjs",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_allowjs"
     },
     {
       "label": "skipLibCheck",
@@ -2035,8 +2750,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "skiplibcheck",
-      "id": "tsconfig_compileroptions_skiplibcheck",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_skiplibcheck"
     },
     {
       "label": "strict",
@@ -2046,8 +2761,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "strict",
-      "id": "tsconfig_compileroptions_strict",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_strict"
     },
     {
       "label": "noEmit",
@@ -2057,8 +2772,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "noemit",
-      "id": "tsconfig_compileroptions_noemit",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_noemit"
     },
     {
       "label": "esModuleInterop",
@@ -2068,8 +2783,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "esmoduleinterop",
-      "id": "tsconfig_compileroptions_esmoduleinterop",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_esmoduleinterop"
     },
     {
       "label": "module",
@@ -2079,8 +2794,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "module",
-      "id": "tsconfig_compileroptions_module",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_module"
     },
     {
       "label": "moduleResolution",
@@ -2090,8 +2805,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "moduleresolution",
-      "id": "tsconfig_compileroptions_moduleresolution",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_moduleresolution"
     },
     {
       "label": "resolveJsonModule",
@@ -2101,8 +2816,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "resolvejsonmodule",
-      "id": "tsconfig_compileroptions_resolvejsonmodule",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_resolvejsonmodule"
     },
     {
       "label": "isolatedModules",
@@ -2112,8 +2827,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "isolatedmodules",
-      "id": "tsconfig_compileroptions_isolatedmodules",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_isolatedmodules"
     },
     {
       "label": "jsx",
@@ -2123,8 +2838,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "jsx",
-      "id": "tsconfig_compileroptions_jsx",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_jsx"
     },
     {
       "label": "incremental",
@@ -2134,8 +2849,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "incremental",
-      "id": "tsconfig_compileroptions_incremental",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_incremental"
     },
     {
       "label": "baseUrl",
@@ -2145,8 +2860,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "baseurl",
-      "id": "tsconfig_compileroptions_baseurl",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_baseurl"
     },
     {
       "label": "paths",
@@ -2156,8 +2871,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "paths",
-      "id": "tsconfig_compileroptions_paths",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_paths"
     },
     {
       "label": "plugins",
@@ -2167,8 +2882,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "plugins",
-      "id": "tsconfig_compileroptions_plugins",
-      "community_name": "compilerOptions"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_compileroptions_plugins"
     },
     {
       "label": "include",
@@ -2176,10 +2891,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 9,
+      "community": 4,
       "norm_label": "include",
-      "id": "tsconfig_include",
-      "community_name": "include"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_include"
     },
     {
       "label": "next-env.d.ts",
@@ -2187,10 +2902,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 9,
+      "community": 4,
       "norm_label": "next-env.d.ts",
-      "id": "ref_next_env_d_ts",
-      "community_name": "include"
+      "community_name": "compilerOptions",
+      "id": "ref_next_env_d_ts"
     },
     {
       "label": "**/*.ts",
@@ -2198,10 +2913,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 9,
+      "community": 4,
       "norm_label": "**/*.ts",
-      "id": "ref_ts",
-      "community_name": "include"
+      "community_name": "compilerOptions",
+      "id": "ref_ts"
     },
     {
       "label": "**/*.tsx",
@@ -2209,10 +2924,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 9,
+      "community": 4,
       "norm_label": "**/*.tsx",
-      "id": "ref_tsx",
-      "community_name": "include"
+      "community_name": "compilerOptions",
+      "id": "ref_tsx"
     },
     {
       "label": ".next/types/**/*.ts",
@@ -2220,10 +2935,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 9,
+      "community": 4,
       "norm_label": ".next/types/**/*.ts",
-      "id": "ref_next_types_ts",
-      "community_name": "include"
+      "community_name": "compilerOptions",
+      "id": "ref_next_types_ts"
     },
     {
       "label": ".next/dev/types/**/*.ts",
@@ -2231,10 +2946,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 9,
+      "community": 4,
       "norm_label": ".next/dev/types/**/*.ts",
-      "id": "ref_next_dev_types_ts",
-      "community_name": "include"
+      "community_name": "compilerOptions",
+      "id": "ref_next_dev_types_ts"
     },
     {
       "label": "exclude",
@@ -2242,10 +2957,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 9,
+      "community": 4,
       "norm_label": "exclude",
-      "id": "tsconfig_exclude",
-      "community_name": "include"
+      "community_name": "compilerOptions",
+      "id": "tsconfig_exclude"
     },
     {
       "label": "node_modules",
@@ -2253,10 +2968,10 @@
       "source_file": "tsconfig.json",
       "source_location": "L39",
       "_origin": "ast",
-      "community": 9,
+      "community": 4,
       "norm_label": "node_modules",
-      "id": "ref_node_modules",
-      "community_name": "include"
+      "community_name": "compilerOptions",
+      "id": "ref_node_modules"
     },
     {
       "label": "vercel.json",
@@ -2266,8 +2981,8 @@
       "_origin": "ast",
       "community": 11,
       "norm_label": "vercel.json",
-      "id": "vercel",
-      "community_name": "vercel.json"
+      "community_name": "vercel.json",
+      "id": "vercel"
     },
     {
       "label": "$schema",
@@ -2277,8 +2992,8 @@
       "_origin": "ast",
       "community": 11,
       "norm_label": "$schema",
-      "id": "vercel_schema",
-      "community_name": "vercel.json"
+      "community_name": "vercel.json",
+      "id": "vercel_schema"
     },
     {
       "label": "framework",
@@ -2288,11 +3003,605 @@
       "_origin": "ast",
       "community": 11,
       "norm_label": "framework",
-      "id": "vercel_framework",
-      "community_name": "vercel.json"
+      "community_name": "vercel.json",
+      "id": "vercel_framework"
     }
   ],
   "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_claude",
+      "target": "claude_claude_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill",
+      "target": "claude_skills_graphify_skill_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L684",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_for_graphify_add_and_watch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L672",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_for_graphify_query",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L690",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_for_the_commit_hook_and_native_claude_md_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L666",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_for_update_and_cluster_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L696",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_honesty_rules",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L648",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_interpreter_guard_for_subcommands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_usage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_what_graphify_is_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_graphify",
+      "target": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_0_github_repos_and_multi_path_merge_only_if_a_url_or_several_paths",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_1_ensure_graphify_is_installed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L144",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_2_5_video_and_audio_only_if_video_files_detected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_2_detect_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L148",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_3_extract_entities_and_relationships",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L453",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_4_5_graph_health_check_read_only_integrity_gate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L390",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_4_build_graph_cluster_analyze_generate_outputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L479",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_5_label_communities",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L520",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_6_generate_obsidian_vault_opt_in_html",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L546",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_step_9_save_manifest_update_cost_tracker_clean_up_and_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L540",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_what_you_must_do_when_invoked",
+      "target": "claude_skills_graphify_skill_steps_6b_8_wiki_neo4j_falkordb_svg_graphml_mcp_benchmark_only_on_their_flags",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "claude_skills_graphify_skill_part_a_structural_extraction_for_code_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L193",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "claude_skills_graphify_skill_part_b_semantic_extraction_parallel_subagents",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/SKILL.md",
+      "source_location": "L356",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_skill_step_3_extract_entities_and_relationships",
+      "target": "claude_skills_graphify_skill_part_c_merge_ast_semantic_into_final_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_add_watch",
+      "target": "claude_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "target": "claude_skills_graphify_references_add_watch_for_graphify_add",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/add-watch.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_add_watch_graphify_reference_add_a_url_and_watch_a_folder",
+      "target": "claude_skills_graphify_references_add_watch_for_watch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports",
+      "target": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_6b_wiki_only_if_wiki_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_7_neo4j_export_only_if_neo4j_or_neo4j_push_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_7a_falkordb_export_only_if_falkordb_or_falkordb_push_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_7b_svg_export_only_if_svg_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_7c_graphml_export_only_if_graphml_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_7d_mcp_server_only_if_mcp_flag",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/exports.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_exports_graphify_reference_extra_exports_and_benchmark",
+      "target": "claude_skills_graphify_references_exports_step_8_token_reduction_benchmark_only_if_total_words_5000",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/extraction-spec.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_extraction_spec",
+      "target": "claude_skills_graphify_references_extraction_spec_graphify_reference_extraction_subagent_prompt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/github-and-merge.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_github_and_merge",
+      "target": "claude_skills_graphify_references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/github-and-merge.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_github_and_merge_graphify_reference_github_clone_and_cross_repo_merge",
+      "target": "claude_skills_graphify_references_github_and_merge_step_0_clone_github_repo_s_only_if_a_github_url_was_given",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_hooks",
+      "target": "claude_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "target": "claude_skills_graphify_references_hooks_for_git_commit_hook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/hooks.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_hooks_graphify_reference_commit_hook_and_native_claude_md_integration",
+      "target": "claude_skills_graphify_references_hooks_for_native_claude_md_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_query",
+      "target": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L254",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "target": "claude_skills_graphify_references_query_for_graphify_explain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "target": "claude_skills_graphify_references_query_for_graphify_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "target": "claude_skills_graphify_references_query_step_0_constrained_query_expansion_required_before_traversal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/query.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_query_graphify_reference_query_path_explain",
+      "target": "claude_skills_graphify_references_query_step_1_traversal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/transcribe.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_transcribe",
+      "target": "claude_skills_graphify_references_transcribe_graphify_reference_transcribe_video_and_audio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/transcribe.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_transcribe_graphify_reference_transcribe_video_and_audio",
+      "target": "claude_skills_graphify_references_transcribe_step_2_5_transcribe_video_audio_files_only_if_video_files_detected",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_update",
+      "target": "claude_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L202",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only",
+      "target": "claude_skills_graphify_references_update_for_cluster_only",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/skills/graphify/references/update.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_skills_graphify_references_update_graphify_reference_incremental_update_and_cluster_only",
+      "target": "claude_skills_graphify_references_update_for_update_incremental_re_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude",
+      "target": "claude_graphify",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "claude_graphify",
+      "target": "claude_local_one_time_setup_per_clone",
+      "confidence_score": 1.0
+    },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
@@ -5823,5 +7132,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "9973143c3f25599aef59520e89cb3bb8b57d9579"
+  "built_at_commit": "9f0d9d5689988a5b8857851e970e6e7327561ec7"
 }
