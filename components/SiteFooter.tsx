@@ -40,6 +40,14 @@ export default function SiteFooter() {
         </button>
       </div>
       <span className="footer-tagline">Made for the herd 🦙🐑 · Real photos, credited to their photographers</span>
+      <a
+        className="footer-dba"
+        href="https://www.digital-bridge-academy.com/?utm_source=llamaoralpaca&utm_medium=footer&utm_campaign=seniors"
+        target="_blank"
+        rel="noreferrer"
+      >
+        💻 New to computers? Patient, friendly classes for adults &amp; seniors at Digital Bridge Academy →
+      </a>
       <div className="footer-social">
         <a href="https://www.pinterest.com/allamaoralpaca/" target="_blank" rel="noreferrer" aria-label="Pinterest">
           <svg viewBox="0 0 24 24" aria-hidden="true">

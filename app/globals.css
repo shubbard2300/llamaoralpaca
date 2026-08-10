@@ -741,3 +741,15 @@ input:focus-visible,
   border-radius: 6px;
 }
 .seo-teaser { font-size: 1rem; }
+.footer-dba {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--chip-bg);
+}
+.footer-dba:hover {
+  color: var(--accent-llama-dark);
+  text-decoration: underline;
+}
