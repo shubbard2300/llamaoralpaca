@@ -466,3 +466,108 @@ a { color: inherit; }
 .approve-btn { background: var(--accent-good); color: #fff; }
 .reject-btn { background: var(--accent-bad); color: #fff; }
 .empty-state { text-align: center; color: var(--ink-soft); padding: 30px 10px; }
+
+/* ---------- SEO content pages ---------- */
+.seo-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+  color: var(--ink);
+}
+.seo-page h1 {
+  font-family: "Fredoka", sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+.seo-page h2 {
+  font-family: "Fredoka", sans-serif;
+  font-size: clamp(1.3rem, 3vw, 1.7rem);
+  margin: 36px 0 10px;
+}
+.seo-page h3 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.1rem;
+  margin: 20px 0 6px;
+}
+.seo-page p,
+.seo-page li {
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+.seo-page a {
+  color: var(--accent-llama-dark);
+  font-weight: 700;
+}
+.seo-lead {
+  font-size: 1.08rem;
+}
+.seo-table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+.seo-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+.seo-table th,
+.seo-table td {
+  padding: 10px 14px;
+  text-align: left;
+  border-bottom: 1px solid rgba(120, 72, 30, 0.12);
+}
+.seo-table thead th {
+  font-family: "Fredoka", sans-serif;
+  color: var(--ink);
+}
+.seo-table tbody td:first-child {
+  font-weight: 800;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.seo-faq p {
+  margin-top: 0;
+}
+.seo-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 36px;
+}
+.seo-teaser {
+  max-width: 640px;
+  margin: 8px auto 40px;
+  padding: 18px 22px;
+  text-align: center;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  color: var(--ink-soft);
+}
+.seo-teaser h2 {
+  font-family: "Fredoka", sans-serif;
+  color: var(--ink);
+  font-size: 1.2rem;
+  margin: 0 0 6px;
+}
+.seo-teaser p {
+  margin: 0 0 10px;
+  line-height: 1.55;
+}
+.seo-teaser a {
+  color: var(--accent-llama-dark);
+  font-weight: 800;
+}
+.seo-page a.btn-primary {
+  color: #fff;
+  text-decoration: none;
+}
+.seo-page a.btn-secondary {
+  color: var(--ink);
+  text-decoration: none;
+}

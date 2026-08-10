@@ -1,0 +1,12 @@
+# Llama or Alpaca?
+
+> A free, fast photo guessing game: look at a real photo and decide — llama or alpaca? Build streaks, learn the tells (ears, size, face, fleece), and beat your best score. Made by Steven J. Hubbard.
+
+## Pages
+
+- [Play the game](https://www.llamaoralpaca.com/): The guessing game — real photos, streaks, and scores.
+- [Llama vs Alpaca: How to Tell the Difference](https://www.llamaoralpaca.com/llama-vs-alpaca): The four tells — ears, size, face, fleece — plus fun facts and FAQs about both animals.
+
+## Merchandise
+
+- [Llama or Alpaca merch shop](https://llama-or-alpaca.myspreadshop.com/): T-shirts, hoodies, and gifts for llama and alpaca lovers.

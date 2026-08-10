@@ -7,13 +7,13 @@ import { SoundProvider } from "@/components/SoundProvider";
 import SiteFooter from "@/components/SiteFooter";
 
 const SITE_URL = "https://www.llamaoralpaca.com";
-const TITLE = "Llama or Alpaca?";
+const TITLE = "Llama or Alpaca? — The Free Photo Guessing Game";
 const DESCRIPTION =
   "A fast, fun guessing game with real photos — is it a llama or an alpaca? Build your streak, learn the tells, and beat your best score.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: TITLE,
+  title: { default: TITLE, template: "%s | Llama or Alpaca?" },
   description: DESCRIPTION,
   icons: { icon: "/llamaVectorHead-NoText.png" },
   alternates: { canonical: "/" },
@@ -24,13 +24,13 @@ export const metadata: Metadata = {
     title: TITLE,
     description: DESCRIPTION,
     url: SITE_URL,
-    images: [{ url: "/llamaVectorHead-NoText.png", alt: "Llama or Alpaca? logo" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Llama or Alpaca? — the free photo guessing game" }],
   },
   twitter: {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: ["/llamaVectorHead-NoText.png"],
+    images: ["/og-image.png"],
   },
 };
 
