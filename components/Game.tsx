@@ -21,6 +21,11 @@ const FACTS: Record<"llama" | "alpaca", string[]> = {
     "Llamas are taller and leaner — bred as pack animals.",
     "A llama's coat is coarser and straighter than an alpaca's.",
     "Llamas can weigh up to 400 lbs — much bigger than alpacas.",
+    "Llamas were domesticated in the Andes over 4,000 years ago.",
+    "A working llama can carry 50–75 lbs of cargo across mountain trails.",
+    "Farms use llamas as guard animals — they chase off coyotes and foxes.",
+    "A llama's banana ears swivel independently to track sounds.",
+    "Llamas were bred from wild guanacos; alpacas from wild vicuñas.",
   ],
   alpaca: [
     "Alpacas have short, spear-shaped ears — much smaller than a llama's.",
@@ -28,6 +33,11 @@ const FACTS: Record<"llama" | "alpaca", string[]> = {
     "Alpacas are shorter and stockier — bred mainly for their fleece.",
     "An alpaca's fleece is dense and extra-soft, prized for fiber.",
     "Alpacas top out around 150–180 lbs, about half a llama's size.",
+    "Alpaca fleece comes in 22 recognized natural colors.",
+    "Alpaca fiber is lanolin-free, which makes it naturally hypoallergenic.",
+    "Alpacas hum to their herd — a content alpaca sounds like a tiny motor.",
+    "The Inca reserved the finest alpaca fleece for royalty.",
+    "That round teddy-bear face is mostly fleece — shearing reveals a slim head.",
   ],
 };
 
@@ -63,15 +73,23 @@ function rankFor(score: number): { title: string; emoji: string } {
   return { title: "Lost Sheep", emoji: "🐑" };
 }
 
+// Route photos through Next's image optimizer: the raw blob uploads are
+// 200-370 KB JPEGs; the optimizer serves ~50 KB WebP at display size.
+// 828 is one of Next's default device widths, so the URL is always valid.
+function optimizedUrl(url: string): string {
+  if (url.startsWith("/")) return url; // local dev fallback uploads
+  return `/_next/image?url=${encodeURIComponent(url)}&w=828&q=75`;
+}
+
 // Preload photos so the next round appears instantly instead of fetching
-// a 200-370 KB JPEG mid-game.
+// mid-game.
 const preloaded = new Set<string>();
 function preloadImages(urls: (string | undefined)[]) {
   for (const url of urls) {
     if (!url || preloaded.has(url)) continue;
     preloaded.add(url);
     const img = new Image();
-    img.src = url;
+    img.src = optimizedUrl(url);
   }
 }
 
@@ -451,7 +469,7 @@ export default function Game() {
               ) : (
                 <div className="creature-frame pop" key={current.id}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={current.url} alt="Guess: llama or alpaca?" />
+                  <img src={optimizedUrl(current.url)} alt="Guess: llama or alpaca?" />
                   {locked && feedback && (
                     <div
                       className={
