@@ -538,11 +538,19 @@ a { color: inherit; }
   gap: 12px;
   margin-top: 36px;
 }
+.home-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .seo-teaser {
-  max-width: 640px;
-  margin: 8px auto 40px;
-  padding: 18px 22px;
+  width: 100%;
+  max-width: 480px;
+  margin: 18px auto 8px;
+  padding: 16px 20px;
   text-align: center;
+  font-size: 0.92rem;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
   border-radius: var(--radius-lg);
@@ -624,4 +632,48 @@ a { color: inherit; }
   .seo-cta-row .btn-secondary {
     transition: none;
   }
+}
+
+/* ---------- merch incentive card ---------- */
+.merch-card {
+  width: 100%;
+  max-width: 480px;
+  margin: 18px auto 0;
+  padding: 18px 20px 20px;
+  text-align: center;
+  background: linear-gradient(160deg, rgba(232, 130, 60, 0.16), rgba(232, 130, 60, 0.05)), var(--card-bg);
+  border: 1px solid rgba(232, 130, 60, 0.45);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  animation: seoFadeUp 0.6s ease-out 0.15s backwards;
+}
+.merch-card-icon {
+  font-size: 1.9rem;
+  display: block;
+  margin-bottom: 4px;
+}
+.merch-card h2 {
+  font-family: "Fredoka", sans-serif;
+  color: var(--ink);
+  font-size: 1.2rem;
+  margin: 0 0 6px;
+}
+.merch-card p {
+  margin: 0 0 14px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+.merch-card-btn {
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.merch-card-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 9px 0 rgba(0, 0, 0, 0.12);
+}
+@media (prefers-reduced-motion: reduce) {
+  .merch-card { animation: none; }
+  .merch-card-btn { transition: none; }
 }

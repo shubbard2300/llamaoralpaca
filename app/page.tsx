@@ -1,21 +1,22 @@
 import Link from "next/link";
 import Game from "@/components/Game";
+import MerchIncentive from "@/components/MerchIncentive";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="home-stack">
       <Game />
+      <MerchIncentive />
       <section className="seo-teaser">
-        <h2>Can&apos;t tell them apart?</h2>
+        <h2>📖 Become the herd expert</h2>
         <p>
-          Ears, size, face, fleece — there are four reliable tells that separate a
-          llama from an alpaca. Learn them in two minutes, then come back and run
-          up your streak.
+          Ears, size, face, fleece — master the four tells in two minutes, then
+          come back and run up your streak.
         </p>
         <p>
           <Link href="/llama-vs-alpaca">Llama vs alpaca: how to tell the difference →</Link>
         </p>
       </section>
-    </>
+    </div>
   );
 }
