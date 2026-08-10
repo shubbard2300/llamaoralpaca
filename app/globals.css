@@ -677,3 +677,55 @@ a { color: inherit; }
   .merch-card { animation: none; }
   .merch-card-btn { transition: none; }
 }
+
+/* ---------- species reveal stamp ---------- */
+.species-stamp {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  padding: 6px 18px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  border: 3px solid currentColor;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.88);
+  transform: translateX(-50%) rotate(-8deg) scale(1);
+  animation: stampIn 0.28s cubic-bezier(0.2, 1.6, 0.4, 1) both;
+  pointer-events: none;
+  z-index: 2;
+}
+.stamp-good { color: var(--accent-good); }
+.stamp-bad { color: var(--accent-bad); }
+@keyframes stampIn {
+  from { transform: translateX(-50%) rotate(-8deg) scale(2.2); opacity: 0; }
+  to { transform: translateX(-50%) rotate(-8deg) scale(1); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .species-stamp { animation: none; }
+}
+
+/* ---------- results rank + recap ---------- */
+.results-rank {
+  font-size: 1.05rem;
+  color: var(--ink-soft);
+  margin: 2px 0 10px;
+}
+.results-rank strong {
+  font-family: "Fredoka", sans-serif;
+  color: var(--ink);
+}
+.results-recap {
+  max-width: 420px;
+  margin: 10px auto 4px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  background: var(--chip-bg);
+  border-radius: 14px;
+}
+.results-recap a {
+  color: var(--accent-llama-dark);
+  font-weight: 700;
+}

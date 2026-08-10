@@ -53,6 +53,28 @@ function loadScores(): { classic: number; blitz: number } {
   }
 }
 
+// Rank titles by final score — mirrored by the "herd cred" merch card.
+function rankFor(score: number): { title: string; emoji: string } {
+  if (score >= 20) return { title: "Andean Legend", emoji: "🏔️" };
+  if (score >= 15) return { title: "Camelid Connoisseur", emoji: "🎓" };
+  if (score >= 10) return { title: "Herd Expert", emoji: "🏅" };
+  if (score >= 5) return { title: "Wool Watcher", emoji: "👀" };
+  if (score >= 1) return { title: "Pasture Rookie", emoji: "🌱" };
+  return { title: "Lost Sheep", emoji: "🐑" };
+}
+
+// Preload photos so the next round appears instantly instead of fetching
+// a 200-370 KB JPEG mid-game.
+const preloaded = new Set<string>();
+function preloadImages(urls: (string | undefined)[]) {
+  for (const url of urls) {
+    if (!url || preloaded.has(url)) continue;
+    preloaded.add(url);
+    const img = new Image();
+    img.src = url;
+  }
+}
+
 let audioCtx: AudioContext | null = null;
 function tone(soundOn: boolean, freq: number, duration: number, type: OscillatorType = "sine", startGain = 0.16) {
   if (!soundOn) return;
@@ -175,6 +197,24 @@ export default function Game() {
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const modeRef = useRef<Mode>("classic");
   const timeLeftRef = useRef(60);
+  // Per-game answer history for the results recap.
+  const historyRef = useRef<{ species: "llama" | "alpaca"; correct: boolean }[]>([]);
+  // Cycle facts per species so all four tells come up before any repeats.
+  const factQueueRef = useRef<Record<"llama" | "alpaca", number[]>>({ llama: [], alpaca: [] });
+  const [copied, setCopied] = useState(false);
+
+  function nextFact(species: "llama" | "alpaca"): string {
+    const q = factQueueRef.current[species];
+    if (q.length === 0) {
+      const idx = FACTS[species].map((_, i) => i);
+      for (let i = idx.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [idx[i], idx[j]] = [idx[j], idx[i]];
+      }
+      factQueueRef.current[species] = idx;
+    }
+    return FACTS[species][factQueueRef.current[species].shift()!];
+  }
 
   useEffect(() => {
     setScores(loadScores());
@@ -200,6 +240,7 @@ export default function Game() {
       setNotEnough(false);
       batchRef.current = images;
       batchIndexRef.current = 0;
+      preloadImages(images.slice(0, 3).map((i) => i.url));
       return true;
     } catch {
       setNotEnough(true);
@@ -216,6 +257,9 @@ export default function Game() {
     }
     const img = batchRef.current[batchIndexRef.current];
     batchIndexRef.current += 1;
+    preloadImages(
+      batchRef.current.slice(batchIndexRef.current, batchIndexRef.current + 2).map((i) => i.url)
+    );
     setCurrent(img);
     setFact(null);
     setLocked(false);
@@ -230,6 +274,8 @@ export default function Game() {
     setFact(null);
     setFeedback(null);
     setNewBest(false);
+    setCopied(false);
+    historyRef.current = [];
     const initialTime = 60;
     setTimeLeft(initialTime);
     timeLeftRef.current = initialTime;
@@ -276,7 +322,8 @@ export default function Game() {
     if (locked || !current) return;
     setLocked(true);
     const correct = guess === current.species;
-    setFact(pick(FACTS[current.species]));
+    historyRef.current.push({ species: current.species, correct });
+    setFact(nextFact(current.species));
 
     if (correct) {
       setScore((s) => {
@@ -405,6 +452,16 @@ export default function Game() {
                 <div className="creature-frame pop" key={current.id}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={current.url} alt="Guess: llama or alpaca?" />
+                  {locked && feedback && (
+                    <div
+                      className={
+                        "species-stamp " +
+                        (feedback === "good" ? "stamp-good" : "stamp-bad")
+                      }
+                    >
+                      {current.species === "llama" ? "🦙 LLAMA" : "🐑 ALPACA"}
+                    </div>
+                  )}
                   {current.attribution_name && (
                     <div className="attribution">
                       {current.attribution_url ? (
@@ -446,6 +503,9 @@ export default function Game() {
         <section className="panel results-screen">
           <div className="results-emoji">{newBest ? "🏆" : finalScore === 0 ? "🦔" : "🎉"}</div>
           <h2>{newBest ? "New best!" : "Round over!"}</h2>
+          <p className="results-rank">
+            {rankFor(finalScore).emoji} Rank: <strong>{rankFor(finalScore).title}</strong>
+          </p>
           <div className="results-stats">
             <div className="stat">
               <span className="stat-value">{finalScore}</span>
@@ -455,11 +515,65 @@ export default function Game() {
               <span className="stat-value">{Math.max(finalScore, scores[mode] || 0)}</span>
               <span className="stat-label">Best</span>
             </div>
+            {historyRef.current.length > 0 && (
+              <div className="stat">
+                <span className="stat-value">
+                  {Math.round(
+                    (historyRef.current.filter((h) => h.correct).length /
+                      historyRef.current.length) *
+                      100
+                  )}
+                  %
+                </span>
+                <span className="stat-label">Accuracy</span>
+              </div>
+            )}
           </div>
           {newBest && <p className="results-new-best">✨ New personal best! ✨</p>}
+          {(() => {
+            const h = historyRef.current;
+            const missedLlama = h.filter((r) => r.species === "llama" && !r.correct).length;
+            const missedAlpaca = h.filter((r) => r.species === "alpaca" && !r.correct).length;
+            const misses = missedLlama + missedAlpaca;
+            if (misses === 0 && h.length > 0)
+              return <p className="results-recap">Perfect eye — not a single miss. 🧐</p>;
+            if (misses === 0) return null;
+            const worst = missedAlpaca >= missedLlama ? "alpaca" : "llama";
+            const tip =
+              worst === "alpaca"
+                ? "Alpacas fooled you most — remember: short spear ears, round teddy-bear face."
+                : "Llamas fooled you most — remember: long banana ears, longer snout.";
+            return (
+              <p className="results-recap">
+                {tip}{" "}
+                <a href="/llama-vs-alpaca">Study the tells →</a>
+              </p>
+            );
+          })()}
           <div className="results-actions">
             <button className="btn-primary" onClick={() => startGame(mode)}>
               Play again
+            </button>
+            <button
+              className="btn-secondary"
+              onClick={async () => {
+                const rank = rankFor(finalScore);
+                const text = `${rank.emoji} I scored ${finalScore} (${rank.title}) on Llama or Alpaca! Think you can tell them apart?`;
+                const url = "https://www.llamaoralpaca.com/";
+                try {
+                  if (navigator.share) {
+                    await navigator.share({ title: "Llama or Alpaca?", text, url });
+                  } else {
+                    await navigator.clipboard.writeText(`${text} ${url}`);
+                    setCopied(true);
+                    setTimeout(() => setCopied(false), 2000);
+                  }
+                } catch {
+                  /* user cancelled share */
+                }
+              }}
+            >
+              {copied ? "Copied! ✓" : "Share score"}
             </button>
             <button className="btn-secondary" onClick={() => setScreen("mode")}>
               Menu
