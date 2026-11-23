@@ -25,7 +25,7 @@ export default function Navbar() {
           Llama <em>or</em> Alpaca
         </span>
       </Link>
-      <nav className="topbar-actions">
+      <nav className="topbar-actions" data-loading={loading || undefined}>
         <button className="icon-btn" aria-pressed={soundOn} aria-label="Toggle sound" onClick={toggleSound}>
           <svg className="icon-on" viewBox="0 0 24 24">
             <path d="M4 9v6h4l5 5V4L8 9H4z" />
@@ -52,7 +52,8 @@ export default function Navbar() {
             Sign out
           </button>
         )}
-        {!loading && !user && (
+        {/* Rendered while the session loads (hidden) so the bar keeps its size and nothing shifts. */}
+        {!user && (
           <>
             <Link href="/login" className="nav-link">
               Log in

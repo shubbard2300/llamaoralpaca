@@ -402,7 +402,7 @@ export default function Game() {
             <span className="hero-sparkle hero-sparkle-2">🌿</span>
             <span className="hero-sparkle hero-sparkle-3">☁️</span>
             <span className="hero-sparkle hero-sparkle-4">🐾</span>
-            <img className="hero-mascot" src="/llamaVectorHead-NoText.png" alt="Llama or Alpaca logo" width={200} height={200} />
+            <img className="hero-mascot" src="/llama-head-296.webp" alt="Llama or Alpaca logo" width={200} height={200} fetchPriority="high" />
           </div>
 
           <h1 className="hero-in hero-in-1">

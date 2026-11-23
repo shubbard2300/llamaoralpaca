@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { Fredoka, Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { SessionProvider } from "@/components/SessionProvider";
 import { SoundProvider } from "@/components/SoundProvider";
 import SiteFooter from "@/components/SiteFooter";
+
+// Self-hosted by Next with size-matched fallbacks, so text doesn't jump when the fonts arrive.
+const fredoka = Fredoka({ subsets: ["latin"], weight: ["500", "600", "700"], variable: "--font-fredoka", display: "swap" });
+const nunito = Nunito({ subsets: ["latin"], weight: ["500", "700", "800"], variable: "--font-nunito", display: "swap" });
 
 const SITE_URL = "https://www.llamaoralpaca.com";
 const TITLE = "Llama or Alpaca? — The Free Photo Guessing Game";
@@ -15,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: { default: TITLE, template: "%s | Llama or Alpaca?" },
   description: DESCRIPTION,
-  icons: { icon: "/llamaVectorHead-NoText.png" },
+  icons: { icon: "/icon-192.png" },
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   openGraph: {
@@ -48,14 +53,8 @@ const JSON_LD = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${fredoka.variable} ${nunito.variable}`}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap"
-          rel="stylesheet"
-        />
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QT9EGB624S" />
         <Script id="ga-init">
           {`window.dataLayer = window.dataLayer || [];
